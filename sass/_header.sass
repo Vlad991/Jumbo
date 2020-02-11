@@ -1,0 +1,72 @@
+@import "font"
+@import "varialble"
+@import "function"
+
+.container__header
+
+.header
+  padding: 25px
+
+.header__logo
+
+.header__menu
+// width: 680px
+
+.header__menu-item
+  @include fontFSC($f-goth, 14px, $orange)
+  text-transform: uppercase
+  display: block
+  line-height: 52px
+  padding: 0 9px
+
+.header__menu-item
+  &:last-child
+    padding-right: 0
+
+  &:first-child
+    padding-left: 0
+
+.header__menu-item_white
+  color: white
+
+.header__small-items
+
+.header__small-item
+  display: block
+  line-height: 52px
+  @include fontFSC($f-goth-5-n, 14px)
+  padding: 0 18px
+
+.header__small-item
+  &:last-child
+    padding-right: 0
+
+  &:first-child
+    padding-left: 0
+
+.header__arrow-after
+  &::after
+    content: url("../img/header/small-arrow.svg")
+    display: inline-block
+    margin-left: 6px
+
+.small-item__img
+  display: block
+  margin-top: 14px
+  position: relative
+  z-index: 5
+
+.small-item__cage
+  position: relative
+  &::after
+    content: ""
+    display: block
+    width: 15px
+    height: 15px
+    border-radius: 50%
+    background-color: #E68336
+    position: absolute
+    top: 12px
+    right: 12px
+    z-index: 1
+

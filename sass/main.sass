@@ -1,7 +1,83 @@
 @import "font"
+@import "varialble"
+@import "function"
 
-// $f-font-weight-style
-$f-gill: "GilroyRegular", sans-serif
-$f-gill-b-n: "GillroyBold", sans-serif
-$f-goth: "GothamProRegular", sans-serif
-$f-goth-5-n: "GothamProMedium", sans-serif
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  color: $clr
+  font-size: 100%
+  vertical-align: baseline
+  list-style: none
+  text-decoration: none
+  font-family: $f-goth-5-n
+  font-weight: normal
+
+button, input
+  &:focus
+    outline: none
+
+//................................Main Styles.......................................
+
+.container
+  background-color: $bg-clr
+  min-height: 2000px
+
+.container__fixed
+  width: 1140px
+  margin: 0 auto
+
+.layout
+  display: flex
+  justify-content: space-between
+
+.container__heading
+  @include fontFSC($f-goth-b-n, 48px)
+
+.container__img
+  width: 100%
+
+.button_orange
+  background: $orange
+  border-radius: 20px
+  border: none
+  height: 36px
+  width: 215px
+  text-align: center
+  line-height: 34px
+  @include fontFSC($f-goth, 16px)
+  text-transform: uppercase
+  box-sizing: border-box
+  padding: 0
+
+.button_transparent
+  border-radius: 20px
+  background: url("../img/main/btn_tr.svg") no-repeat center
+  background-size: cover
+  border: none
+  height: 34px
+  width: 215px
+  text-align: center
+  line-height: 36px
+  @include fontFSC($f-goth, 16px, $orange)
+  text-transform: uppercase
+  box-sizing: border-box
+  padding: 0
+
+.input-field
+  height: 55px
+  width: 367px
+  box-sizing: border-box
+  padding: 0 24px
+  background-color: transparent
+  border: 1px solid #C1BBBB
+  @include fontFSC($f-goth, 19px)
+
+//....................................Header........................................
+
+@import "header"
+
+//....................................Footer........................................
+
+@import "footer"

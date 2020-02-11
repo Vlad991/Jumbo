@@ -1,0 +1,106 @@
+container
+
+container__header
+    header
+        header__logo
+        header__menu
+            header__menu-item
+            header__menu-item_white
+
+
+container__main-slider
+    main-slider
+        main-slider__main-heading
+            main-heading
+                main-heading__first
+                main-heading__second
+        main-slider__socials-item
+            main-slider__socials
+        main-slider__button
+            button_orange
+        main-slider__dots
+            main-slider__dot
+            main-slider__dot_active
+
+container__cool
+    cool
+        container__heading
+        cool__statistics
+            statistics
+                statistics__item
+                    statistics__value
+                    statistics__description
+        cool__snake
+            snake__img
+            snake__article
+                snake__heading
+                snake__description
+
+container__for-watch
+    for-watch
+        for-watch__heading
+        for-watch__play
+
+container__cool-all
+    cool-all
+        cool-all__action-block
+            action-block
+                action-block__heading
+                action-block__description
+                action-block__button
+
+container__hits
+    hits
+        container__heading
+        hits__product-slider
+            product-slider
+                product-slider__card-trans
+                    card-trans__heading
+                    card-trans__img
+                    card-trans__price-weight
+                        card-trans__weight
+                    card-trans__price-qnt
+                        card-trans__quantity
+                            card-trans__plus
+                            card-trans__price
+                        card-trans__price
+                    card-trans__button
+                product-slider__arrow
+
+container__catering
+    catering
+        container__img
+
+container__advantage
+    advantage
+        advantage__heading
+        advantage__list
+            advantage__item
+        advantage__button
+
+container__command
+    command
+        command__description
+
+container__restaurant
+    restaurant
+
+container__advantage
+    advantage
+
+
+container__footer
+    footer
+        footer__foot-content
+            foot-content
+                foot-content__logo
+                foot-content__block
+                    foot-content__item
+        footer__basement
+            basement
+                basement__payments
+                    basement__item
+                basement__rights
+                basement__by
+
+
