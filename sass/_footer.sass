@@ -1,29 +1,58 @@
-@import "font"
 @import "varialble"
 @import "function"
 
-container__footer
+.container__footer
+  margin-top: 7429px
 
 .footer
+  height: 251px
+  background: $bg-clr
+  border-top: 1px solid #FFF
+  box-sizing: border-box
 
 .footer__foot-content
+  margin-top: 45px
 
 .foot-content
+  height: 89px
+  padding-left: 40px
+  box-sizing: border-box
 
 .foot-content__logo
+  display: block
+  height: 56px
 
 .foot-content__block
+  display: flex
+  flex-direction: column
+  justify-content: space-between
 
 .foot-content__item
+  @include fontFSC($goth, 14px, $clr)
+  text-transform: uppercase
+
+.foot-content__item_no-upper
+  text-transform: none
+
+.foot-content__img
+  margin-right: 10px
+  vertical-align: baseline
 
 .footer__basement
+  margin-top: 50px
 
 .basement
 
 .basement__payments
+  width: 208px
 
 .basement__item
+  line-height: 25px
 
 .basement__rights
+  @include fontFSC($goth, 14px, $clr)
+  line-height: 20px
 
 .basement__by
+  width: 208px
+  text-align: right
