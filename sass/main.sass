@@ -22,10 +22,9 @@ button, input
 
 .container
   background-color: $bg-clr
-  min-height: 2000px
 
 .container__fixed
-  width: 1140px
+  max-width: 1140px
   margin: 0 auto
 
 .layout
@@ -51,7 +50,7 @@ button, input
   box-sizing: border-box
   padding: 0
 
-.button_transparent
+.button
   border-radius: 20px
   background: url("../img/main/btn_tr.svg") no-repeat center
   background-size: cover
@@ -59,11 +58,25 @@ button, input
   height: 34px
   width: 215px
   text-align: center
-  line-height: 36px
+  line-height: 38px
   @include fontFSC($goth, 16px, $orange)
   text-transform: uppercase
   box-sizing: border-box
   padding: 0
+  cursor: pointer
+  transition: all 200ms ease-in-out
+  &:hover
+    background: $orange
+    border-radius: 20px
+    border: none
+    height: 34px
+    width: 215px
+    text-align: center
+    line-height: 38px
+    @include fontFSC($goth, 16px)
+    text-transform: uppercase
+    box-sizing: border-box
+    padding: 0
 
 .input-field
   height: 55px
@@ -81,3 +94,7 @@ button, input
 //....................................Footer........................................
 
 @import "footer"
+
+//....................................Main Slider........................................
+
+@import "main_slider"

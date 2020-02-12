@@ -8,9 +8,9 @@
 <body>
 <div class="container">
     <header class="container__header container__fixed header layout">
-        <img src="./img/header/logo.svg" alt="Logo" class="header__logo">
+        <a href="/"  class="header__logo"><img src="./img/header/logo.svg" alt="Logo"></a>
         <div class="header__menu layout">
-            <a href="#" class="header__menu-item header__menu-item_white">меню</a>
+            <a href="#" class="header__menu-item header__menu-item_active">меню</a>
             <a href="#" class="header__menu-item">кейтерінг</a>
             <a href="#" class="header__menu-item">Ресторани</a>
             <a href="#" class="header__menu-item">Чому ми?</a>
@@ -25,9 +25,32 @@
         </div>
     </header>
 
+    <div class="container__main-slider main-slider">
+        <div class="container__fixed">
+            <div class="main-slider__main-heading main-heading">
+                <h1 class="main-heading__first">Найсмачніший гриль тільки з</h1>
+                <h2 class="main-heading__second">Jumbo Grill</h2>
+            </div>
+            <div class="main-slider__wrapper">
+                <button class="main-slider__button button">меню доставки</button>
+                <div class="dots__wrapper">
+                    <div class="main-slider__socials">
+                        <a href="#" class="main-slider__socials-item"><img src="./img/main-slider/inst.svg"></a>
+                        <a href="#" class="main-slider__socials-item"><img src="./img/main-slider/fb.svg"></a>
+                    </div>
+                    <ul class="main-slider__dots layout">
+                        <li class="main-slider__dot main-slider__dot_active"></li>
+                        <li class="main-slider__dot"></li>
+                        <li class="main-slider__dot"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="container__footer footer">
         <div class="container__fixed footer__foot-content layout foot-content">
-            <img src="./img/footer/logo.svg" alt="Logo" class="foot-content__logo">
+            <a href="/"  class="foot-content__logo"><img src="./img/footer/logo.svg" alt="Logo"></a>
             <div class="foot-content__block">
                 <a href="#" class="foot-content__item">Меню</a>
                 <a href="#" class="foot-content__item">ресторани</a>

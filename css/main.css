@@ -81,11 +81,10 @@ button:focus, input:focus {
 
 .container {
   background-color: #030101;
-  min-height: 2000px;
 }
 
 .container__fixed {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -125,7 +124,7 @@ button:focus, input:focus {
   padding: 0;
 }
 
-.button_transparent {
+.button {
   border-radius: 20px;
   background: url("../img/main/btn_tr.svg") no-repeat center;
   background-size: cover;
@@ -133,10 +132,30 @@ button:focus, input:focus {
   height: 34px;
   width: 215px;
   text-align: center;
-  line-height: 36px;
+  line-height: 38px;
   font-family: "GothamProRegular", sans-serif;
   font-size: 16px;
   color: #ED6C0C;
+  text-transform: uppercase;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.button:hover {
+  background: #ED6C0C;
+  border-radius: 20px;
+  border: none;
+  height: 34px;
+  width: 215px;
+  text-align: center;
+  line-height: 38px;
+  font-family: "GothamProRegular", sans-serif;
+  font-size: 16px;
+  color: #fff;
   text-transform: uppercase;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -234,6 +253,10 @@ button:focus, input:focus {
   padding: 0 9px;
 }
 
+.header__menu-item:hover {
+  color: #fff;
+}
+
 .header__menu-item:last-child {
   padding-right: 0;
 }
@@ -242,8 +265,8 @@ button:focus, input:focus {
   padding-left: 0;
 }
 
-.header__menu-item_white {
-  color: white;
+.header__menu-item_active {
+  color: #fff;
 }
 
 .header__small-item {
@@ -357,10 +380,6 @@ button:focus, input:focus {
   font-weight: normal;
 }
 
-.container__footer {
-  margin-top: 7429px;
-}
-
 .footer {
   height: 251px;
   background: #030101;
@@ -436,6 +455,159 @@ button:focus, input:focus {
 .basement__by {
   width: 208px;
   text-align: right;
+}
+
+@font-face {
+  font-family: 'GilroyBold';
+  src: url("../fonts/Gilroy/Gilroy-Bold.eot");
+  src: local("Gilroy Bold"), local("Gilroy-Bold"), url("../fonts/Gilroy/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GothamProRegular";
+  src: url("../fonts/GothamPro/GothamProRegular/GothamProRegular.eot");
+  src: url("../fonts/GothamPro/GothamProRegular/GothamProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamProRegular/GothamProRegular.woff") format("woff"), url("../fonts/GothamPro/GothamProRegular/GothamProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GothamProBold";
+  src: url("../fonts/GothamPro/GothamProBold/GothamProBold.eot");
+  src: url("../fonts/GothamPro/GothamProBold/GothamProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamProBold/GothamProBold.woff") format("woff"), url("../fonts/GothamPro/GothamProBold/GothamProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GothamProMedium";
+  src: url("../fonts/GothamPro/GothamProMedium/GothamProMedium.eot");
+  src: url("../fonts/GothamPro/GothamProMedium/GothamProMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamProMedium/GothamProMedium.woff") format("woff"), url("../fonts/GothamPro/GothamProMedium/GothamProMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'GilroyBold';
+  src: url("../fonts/Gilroy/Gilroy-Bold.eot");
+  src: local("Gilroy Bold"), local("Gilroy-Bold"), url("../fonts/Gilroy/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GothamProRegular";
+  src: url("../fonts/GothamPro/GothamProRegular/GothamProRegular.eot");
+  src: url("../fonts/GothamPro/GothamProRegular/GothamProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamProRegular/GothamProRegular.woff") format("woff"), url("../fonts/GothamPro/GothamProRegular/GothamProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GothamProBold";
+  src: url("../fonts/GothamPro/GothamProBold/GothamProBold.eot");
+  src: url("../fonts/GothamPro/GothamProBold/GothamProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamProBold/GothamProBold.woff") format("woff"), url("../fonts/GothamPro/GothamProBold/GothamProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GothamProMedium";
+  src: url("../fonts/GothamPro/GothamProMedium/GothamProMedium.eot");
+  src: url("../fonts/GothamPro/GothamProMedium/GothamProMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamProMedium/GothamProMedium.woff") format("woff"), url("../fonts/GothamPro/GothamProMedium/GothamProMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.main-slider {
+  background-image: url("../img/main-slider/bg.svg");
+  background-repeat: no-repeat;
+  background-position: 550px -66px;
+  height: 679px;
+  padding: 0.01%;
+}
+
+.main-slider__main-heading {
+  margin-top: 153px;
+}
+
+.main-heading {
+  width: 655px;
+  height: 225px;
+  text-align: left;
+  line-height: 79px;
+}
+
+.main-heading__first {
+  font-family: "GilroyBold", sans-serif;
+  font-size: 72px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.main-heading__second {
+  font-family: "GilroyBold", sans-serif;
+  font-size: 72px;
+  color: linear-gradient(#ED6C0C 0%, #D81212 100%);
+}
+
+.main-slider__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  width: 400px;
+  position: relative;
+}
+
+.dots__wrapper {
+  margin-top: 141px;
+}
+
+.main-slider__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 20px;
+}
+
+.main-slider__socials-item {
+  display: block;
+  margin-bottom: 22px;
+}
+
+.main-slider__button {
+  position: absolute;
+  top: 127px;
+  left: 97px;
+}
+
+.main-slider__dots {
+  width: 64px;
+  margin-top: 17px;
+}
+
+.main-slider__dot {
+  width: 8px;
+  height: 8px;
+  background: #ED6C0C;
+  border-radius: 50%;
+}
+
+.main-slider__dot_active {
+  background: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
