@@ -70,13 +70,12 @@ container__hits
 container__catering
     catering
         container__img
-
-container__advantage
-    advantage
-        advantage__heading
-        advantage__list
-            advantage__item
-        advantage__button
+        catering__advantage
+            advantage
+                advantage__heading
+                advantage__list
+                    advantage__item
+                advantage__button
 
 container__command
     command
@@ -84,9 +83,16 @@ container__command
 
 container__restaurant
     restaurant
+        restaurant__complex
+            complex__heading
+            complex__text
 
-container__advantage
-    advantage
+
+container__clients
+    clients
+        clients__slider
+            clients__arrow
+            clients__item
 
 
 container__footer
