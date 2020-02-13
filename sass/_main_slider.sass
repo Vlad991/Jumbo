@@ -2,6 +2,7 @@
 @import "function"
 
 .container__main-slider
+  background-color: $bg-clr
 
 .main-slider
   background-image: url("../img/main-slider/bg.svg")
@@ -24,7 +25,8 @@
   text-transform: uppercase
 
 .main-heading__second
-  @include fontFSC($gill-b, 72px, linear-gradient(#ED6C0C 0%, #D81212 100%))
+  @include fontFSC($gill-b, 72px)
+  @include grad()
 
 .main-slider__wrapper
   display: flex

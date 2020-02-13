@@ -18,10 +18,14 @@ button, input
   &:focus
     outline: none
 
+body
+  background-color: $bg-clr
+
 //................................Main Styles.......................................
 
 .container
-  background-color: $bg-clr
+  background: url("../img/main/bg.jpg")
+  background-size: cover
 
 .container__fixed
   max-width: 1140px
@@ -33,6 +37,8 @@ button, input
 
 .container__heading
   @include fontFSC($goth-b, 48px)
+  text-align: center
+  margin-top: 45px
 
 .container__img
   width: 100%
@@ -98,3 +104,7 @@ button, input
 //....................................Main Slider........................................
 
 @import "main_slider"
+
+//....................................Cool........................................
+
+@import "cool"
