@@ -1,1 +1,11 @@
 container__contacts
+    contacts
+        contacts__cont-info
+            cont-info
+                cont-info__table
+                    cont-info__item
+                cont-info__button
+                cont-info__item
+                cont-info__social
+        contacts__map
+            map
