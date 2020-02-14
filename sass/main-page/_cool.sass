@@ -1,0 +1,56 @@
+@import "sass/varialble"
+@import "sass/function"
+
+.container__cool
+
+.cool
+
+.cool__statistics
+  margin-top: 56px
+
+.statistics
+
+.statistics__item
+  display: flex
+  flex-direction: column
+  &:last-child
+    width: 135px
+
+.statistics__value
+  @include fontFSC($goth, 96px)
+  @include grad()
+
+.statistics__description
+  @include fontFSC($goth-5, 18px)
+  margin-top: 3px
+  width: 174px
+
+.cool__snake
+  background-image: url("../../img/cool/bg.png")
+  background-repeat: no-repeat
+  background-position: -187px -38px
+
+.snake
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  height: 1803px
+  padding: 195px 0 134px 238px
+  box-sizing: border-box
+
+.snake__img
+
+.snake__article
+  width: 456px
+  &:nth-child(2n+1)
+    align-self: flex-end
+
+.snake__heading
+  @include fontFSC($goth, 30px)
+  width: 415px
+
+.snake__description
+  @include fontFSC($goth, 16px, $clr)
+  margin-top: 25px
+  line-height: 23px
+  width: 355px
