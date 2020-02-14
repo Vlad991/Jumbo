@@ -12,25 +12,31 @@
   margin-top: 69px
 
 .advantage
+  display: flex
 
 .advantage__heading
   display: block
   @include fontFSC($goth-b, 36px)
   width: 360px
+  margin-top: 5px
 
 .advantage__list
   display: flex
-  width: 613px
-  justify-content: space-between
+  flex-direction: column
+  width: 653px
+  height: 130px
   flex-wrap: wrap
+  align-content: space-between
+  margin-left: 40px
 
 .advantage__item
-  @include fontFSC($goth, 16px, $clr)
+  @include fontFSC($goth-r, 16px, $clr)
   list-style-type: disc
   width: 263px
-  margin-top: 10px
   line-height: 24px
+  &:nth-child(2n)
+    margin-top: 10px
 
 .catering__button
   text-align: right
-  margin-top: 41px
+  margin-top: 33px

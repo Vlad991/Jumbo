@@ -11,7 +11,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline
   list-style: none
   text-decoration: none
-  font-family: $goth-5
+  font-family: $goth-m
   font-weight: normal
 
 button, input
@@ -38,23 +38,22 @@ body
 .container__heading
   @include fontFSC($goth-b, 48px)
   text-align: center
-  margin-top: 45px
+  margin-top: 52px
+  line-height: 50px
+
+.container__title
+  @include fontFSC($goth-bl, 36px)
+  text-align: left
+  text-transform: uppercase
+  line-height: 34px
+
+.container__location
+  @include fontFSC($goth-r, 14px, $clr)
+  text-align: left
+  line-height: 20px
 
 .container__img
   width: 100%
-
-.button_orange
-  background: $orange
-  border-radius: 20px
-  border: none
-  height: 36px
-  width: 215px
-  text-align: center
-  line-height: 34px
-  @include fontFSC($goth, 16px)
-  text-transform: uppercase
-  box-sizing: border-box
-  padding: 0
 
 .button
   border-radius: 20px
@@ -64,8 +63,8 @@ body
   height: 34px
   width: 215px
   text-align: center
-  line-height: 38px
-  @include fontFSC($goth, 16px, $orange)
+  line-height: 34px
+  @include fontFSC($goth-m, 16px, $orange)
   text-transform: uppercase
   box-sizing: border-box
   padding: 0
@@ -73,16 +72,14 @@ body
   transition: all 200ms ease-in-out
   &:hover
     background: $orange
-    border-radius: 20px
-    border: none
-    height: 34px
-    width: 215px
-    text-align: center
-    line-height: 38px
-    @include fontFSC($goth, 16px)
-    text-transform: uppercase
-    box-sizing: border-box
-    padding: 0
+    @include fontFSC($goth-m, 16px)
+
+.button_long
+  background: url("../img/main/btn_tr_long.svg") no-repeat center
+  width: 262px
+  &:hover
+    width: 262px
+
 
 .input-field
   height: 55px
@@ -91,7 +88,12 @@ body
   padding: 0 24px
   background-color: transparent
   border: 1px solid #C1BBBB
-  @include fontFSC($goth, 19px)
+  @include fontFSC($goth-r, 19px)
+
+.link
+  @include fontFSC($goth-m, 14px, $clr)
+  &:hover
+    color: $orange
 
 //....................................Header........................................
 
@@ -132,3 +134,11 @@ body
 //....................................Clients........................................
 
 @import "main-page/clients"
+
+//....................................Chose........................................
+
+@import "main-page/chose"
+
+//....................................Contacts........................................
+
+@import "contacts/contacts"

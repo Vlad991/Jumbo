@@ -6,7 +6,7 @@
 .cool
 
 .cool__statistics
-  margin-top: 56px
+  margin-top: 42px
 
 .statistics
 
@@ -17,25 +17,30 @@
     width: 135px
 
 .statistics__value
-  @include fontFSC($goth, 96px)
+  @include fontFSC($goth-m, 96px)
+  @include grad()
+  line-height: 100px
+  height: 100px
+
+.statistics__value_small
+  @include fontFSC($goth-m, 66px)
   @include grad()
 
 .statistics__description
-  @include fontFSC($goth-5, 18px)
-  margin-top: 3px
+  @include fontFSC($goth-m, 18px)
   width: 174px
 
 .cool__snake
   background-image: url("../../img/cool/bg.png")
   background-repeat: no-repeat
-  background-position: -187px -38px
+  background-position: -108px -36px
 
 .snake
   display: flex
   flex-direction: column
   justify-content: space-between
-  height: 1803px
-  padding: 195px 0 134px 238px
+  height: 1811px
+  padding: 192px 14px 127px 238px
   box-sizing: border-box
 
 .snake__img
@@ -46,11 +51,11 @@
     align-self: flex-end
 
 .snake__heading
-  @include fontFSC($goth, 30px)
+  @include fontFSC($goth-r, 30px)
   width: 415px
 
 .snake__description
-  @include fontFSC($goth, 16px, $clr)
-  margin-top: 25px
+  @include fontFSC($goth-m, 16px, $clr)
+  margin-top: 30px
   line-height: 23px
   width: 355px
