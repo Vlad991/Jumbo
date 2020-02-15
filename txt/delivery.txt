@@ -1,0 +1,26 @@
+container__delivery
+    delivery
+        delivery__del-info del-info
+            del-info__text
+            del-info__text_bold
+            del-info__button
+        delivery__yourself
+            yourself
+                yourself__heading
+                yourself__text
+                yourself__text_red
+        delivery__zone
+            zone
+                zone__heading
+                zone__z-map
+                    z-map
+                        z-map__img
+                        z-map__description
+                            z-map__item
+        delivery__payment
+            payment
+                payment__heading
+                payment__ways
+                    payment__way
+                        payment__w-img
+                        payment__w-text

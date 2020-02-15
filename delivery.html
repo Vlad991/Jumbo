@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-<div class="container container_no-bg">
+<div class="container">
     <header class="container__header header">
         <div class="container__fixed layout">
             <a href="/" class="header__logo"><img src="./img/header/logo.svg" alt="Logo"></a>
@@ -28,45 +28,49 @@
         </div>
     </header>
 
-    <section class="container__contacts container__fixed layout contacts">
-        <div class="contacts__cont-info cont-info">
-            <div class="container__location">Головна / Контакти</div>
-            <h1 class="container__title">Контакти</h1>
-            <div class="cont-info__table">
-                <div class="cont-info__item">
-                    <div class="cont-info__name">Колл центр:</div>
-                    <div class="cont-info__value">068 121 21 22</div>
-                </div>
-                <div class="cont-info__item">
-                    <div class="cont-info__name">Кейтерінг:</div>
-                    <div class="cont-info__value">068 121 21 12</div>
-                </div>
-                <div class="cont-info__item">
-                    <div class="cont-info__name">Ресторан “Двір Голосіївський”:</div>
-                    <div class="cont-info__value">067 443 22 82</div>
-                </div>
-                <div class="cont-info__item">
-                    <div class="cont-info__name">Контроль якості:</div>
-                    <div class="cont-info__value">096 172 92 92</div>
-                </div>
-                <div class="cont-info__item">
-                    <div class="cont-info__name">E-mail:</div>
-                    <div class="cont-info__value">hello@jumbogrill.ua</div>
-                </div>
-                <div class="cont-info__item">
-                    <div class="cont-info__name">Адреса:</div>
-                    <div class="cont-info__value">Київ, Голосіївський проспект 87 б</div>
-                </div>
-            </div>
-            <button class="cont-info__button button button_long">Зв’язатися з нами</button>
-            <div class="cont-info__soc-head">Ми в соціальних мережах:</div>
-            <div class="cont-info__socials layout">
-                <a href="#" class="cont-info__social"><img src="./img/contacts/viber.svg" alt="Viber"></a>
-                <a href="#" class="cont-info__social"><img src="./img/contacts/telegram.svg" alt="Telegram" class="cont-info__social"></a>
-                <a href="#" class="cont-info__social"><img src="./img/contacts/facebook.svg" alt="Facebook" class="cont-info__social"></a>
+    <section class="container__delivery delivery">
+        <div class="delivery__del-info container__fixed del-info">
+            <div class="container__location">Головна / Доставка та оплата</div>
+            <h1 class="container__title">Доставка та оплата</h1>
+            <div class="del-info__text">Прийом замовлення з <span class="del-info__text_bold">10:00 до 22:00</span></div>
+            <div class="del-info__text">На замовлення від 3 000 грн доставка по Києву <span class="del-info__text_bold">БЕЗКОШТОВНО</span></div>
+            <div class="del-info__text">Час на приготування замовлення та доставку <span class="del-info__text_bold">ДО 4-Х ГОДИН</span></div>
+            <div class="del-info__text">В п’ятницю, суботу, неділю та святкові дні час на доставку може бути збільшено</div>
+            <div class="del-info__text_bold del-info__text_2">Замовлення до 1 000 грн:</div>
+            <div class="del-info__text_bold"><img src="./img/delivery/delivery_items.svg" alt="Delivery"></div>
+            <div class="del-info__text_bold del-info__text_2">Замовлення від 1 000 грн:</div>
+            <div class="del-info__text del-info__text_bold">Фірмова доставка + логістика згідно схеми</div>
+            <button class="del-info__button button">Фірмова доставка</button>
+        </div>
+        <div class="delivery__yourself yourself">
+            <h2 class="container__title yourself__heading">Забирати самому вигідно</h2>
+            <div class="yourself__text">Обираючи самовивіз, ви <span class="yourself__text_red">заощаджуєте 20%</span> від ціни замовлення</div>
+        </div>
+        <div class="delivery__zone zone">
+            <h2 class="container__title zone__heading">Зони доставки</h2>
+            <div class="zone__z-map z-map">
+                <img src="./img/delivery/map.jpg" alt="Map" class="z-map__img">
+                <ul class="container__fixed layout z-map__description">
+                    <li class="z-map__item">0км – 5км – доставка 0 грн</li>
+                    <li class="z-map__item">5км – 10км – доставка 100 грн</li>
+                    <li class="z-map__item">10км – 20км – доставка 200 грн</li>
+                    <li class="z-map__item">20км + - доставка 300 грн</li>
+                </ul>
             </div>
         </div>
-        <img src="./img/contacts/map.jpg" alt="Map" class="contacts__map map">
+        <div class="delivery__payment payment">
+            <h2 class="container__title payment__heading">Оплата</h2>
+            <div class="payment__ways layout">
+                <div class="payment__way">
+                    <img src="./img/delivery/cash.svg" alt="Cash" class="payment__w-img">
+                    <div class="payment__w-text">Готівкою кур’єру</div>
+                </div>
+                <div class="payment__way">
+                    <img src="./img/delivery/card.svg" alt="Cash" class="payment__w-img">
+                    <div class="payment__w-text">Безготівковий онлайн - розрахунок через WAYFORPAY (VISA, MASTERCARD)</div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="container__footer footer">

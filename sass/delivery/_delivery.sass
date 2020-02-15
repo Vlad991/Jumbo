@@ -1,0 +1,117 @@
+@import "sass/varialble"
+@import "sass/function"
+
+.container__delivery
+
+.delivery
+
+.delivery__del-info
+
+.del-info
+  background-image: url("../../img/delivery/info_bg.svg")
+  background-repeat: no-repeat
+  background-position: 100% -22px
+
+.del-info__text
+  @include fontFSC($goth-r, 14px)
+  margin-top: 15px
+
+.del-info__text_2
+  margin-top: 35px
+
+.del-info__text_bold
+  @include fontFSC($goth-b, 14px)
+
+.del-info__button
+  margin-top: 35px
+
+.delivery__yourself
+  margin-top: 39px
+
+.yourself
+  height: 300px
+  background: url("../../img/delivery/yourself_bg.jpg") no-repeat top center
+  background-size: cover
+  padding: 0.01%
+
+.yourself__heading
+  text-align: center
+  margin: 53px auto 0
+  width: 458px
+
+.yourself__text
+  @include fontFSC($goth-r, 24px)
+  text-align: center
+  width: 674px
+  margin: 30px auto 0
+  line-height: 35px
+
+.yourself__text_red
+  @include fontFSC($goth-m, 35px, #E34035)
+
+.delivery__zone
+
+.zone
+  background: $bg-clr
+  padding: 0.01%
+
+.zone__heading
+  margin-top: 50px
+  text-align: center
+
+.zone__z-map
+  margin-top: 36px
+
+.z-map
+
+.z-map__img
+  width: 100%
+
+.z-map__description
+  margin-top: 50px
+  margin-bottom: 60px
+
+.z-map__item
+  @include fontFSC($goth-m, 14px)
+  &::before
+    content: ""
+    display: inline-block
+    height: 20px
+    width: 20px
+    vertical-align: middle
+    margin-right: 10px
+  &:nth-child(1)::before
+    background: #4A5DC3
+  &:nth-child(2)::before
+    background: #E68336
+  &:nth-child(3)::before
+    background: #5FB709
+  &:nth-child(4)::before
+    background: #E34035
+
+.delivery__payment
+  margin-top: 60px
+
+.payment
+  height: 327px
+
+.payment__heading
+  text-align: center
+  margin-top: 60px
+
+.payment__ways
+  margin: 60px auto 0
+  width: 580px
+
+.payment__way
+  width: 255px
+
+.payment__w-img
+  display: block
+  margin: 0 auto
+
+.payment__w-text
+  margin-top: 25px
+  @include fontFSC($goth-r, 14px)
+  line-height: 20px
+  text-align: center

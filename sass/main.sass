@@ -27,6 +27,9 @@ body
   background: url("../img/main/bg.jpg")
   background-size: cover
 
+.container_no-bg
+  background: none
+
 .container__fixed
   max-width: 1140px
   margin: 0 auto
@@ -57,6 +60,7 @@ body
   width: 100%
 
 .button
+  display: block
   border-radius: 20px
   background: url("../img/main/btn_tr.svg") no-repeat center
   background-size: cover
@@ -83,13 +87,23 @@ body
 
 
 .input-field
+  display: block
   height: 55px
   width: 367px
   box-sizing: border-box
-  padding: 0 24px
+  padding: 18px 24px
   background-color: transparent
   border: 1px solid #C1BBBB
+  outline: none
   @include fontFSC($goth-r, 19px)
+  &:focus
+    border: 1px solid $orange
+  &::placeholder
+    //@include fontFSC($goth-r, 19px)
+
+.input-field_area
+  height: 127px
+  resize: none
 
 .link
   @include fontFSC($goth-m, 14px, $clr)
@@ -143,3 +157,8 @@ body
 //....................................Contacts........................................
 
 @import "contacts/contacts"
+@import "contacts/feedback"
+
+//....................................Delivery........................................
+
+@import "delivery/delivery"
