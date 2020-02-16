@@ -1,0 +1,25 @@
+
+container__product
+    product
+        product__img
+        product__info
+            product__heading
+            product__text
+            product__price-weight
+                product__weight
+                product__min-weight
+            product__price-qnt
+                product__quantity
+                    product__plus
+                    product__qnt-value
+                product__price
+            product__comment
+                product__cmt-heading
+                product__cmt-input
+            product__button
+
+container__recommended
+    recommended
+        recommended__arrow
+        recommended__products
+            recommended__product

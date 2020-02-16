@@ -55,6 +55,21 @@ body
   @include fontFSC($goth-r, 14px, $clr)
   text-align: left
   line-height: 20px
+  cursor: pointer
+
+.container__back
+  @include fontFSC($goth-r, 14px, $clr)
+  line-height: 20px
+  margin-top: 22px
+  cursor: pointer
+  &:before
+    content: url("../img/main/back.svg")
+    display: inline-block
+    height: 15px
+    margin-right: 16px
+    vertical-align: sub
+  .container__back-text
+    display: inline-block
 
 .container__img
   width: 100%
@@ -187,3 +202,7 @@ body
 
 @import "menu/menu"
 @import "menu/card"
+
+//....................................Product........................................
+
+@import "product/product"
