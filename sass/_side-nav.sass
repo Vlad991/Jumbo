@@ -1,0 +1,59 @@
+@import "varialble"
+@import "function"
+
+.container__side-nav
+
+.side-nav
+  width: 195px!important
+
+.side-nav__item
+  margin-top: 19px
+  &:first-child
+    margin-top: 0
+  .side-nav__item-line
+    cursor: pointer
+    .side-nav__item-img
+      width: 30px
+      height: 21px
+      display: block
+    .side-nav__item-name
+      @include fontFSC($goth-b, 14px)
+      line-height: 20px
+      width: 100%
+      padding: 0 10px
+      box-sizing: border-box
+    .side-nav___arrow
+      height: 20px
+  .side-nav__sub-items
+    display: none
+    .side-nav__sub-item
+
+.side-nav__item_active
+  .side-nav__item-line
+    .side-nav__item-img
+      path
+        fill: $orange
+    .side-nav__item-name
+      color: $orange
+    .side-nav___arrow
+      path
+        fill: $orange
+  .side-nav__sub-items
+    display: block
+    margin-top: 25px
+    margin-bottom: 25px
+    padding: 0 30px
+    box-sizing: border-box
+    .side-nav__sub-item
+      @include fontFSC($goth-r, 14px)
+      line-height: 13px
+      margin-top: 15px
+      &:first-child
+        margin-top: 0
+
+
+
+
+
+
+

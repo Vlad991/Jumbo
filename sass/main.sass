@@ -85,6 +85,22 @@ body
   &:hover
     width: 262px
 
+.button-org
+  display: block
+  background-color: $orange
+  border: none
+  height: 35px
+  width: 185px
+  text-align: center
+  line-height: 35px
+  @include fontFSC($goth-m, 14px)
+  text-transform: uppercase
+  box-sizing: border-box
+  padding: 0
+  cursor: pointer
+  transition: all 200ms ease-in-out
+  &:hover
+    background: #CD070F
 
 .input-field
   display: block
@@ -117,6 +133,10 @@ body
 //....................................Footer........................................
 
 @import "footer"
+
+//....................................Side NavBar........................................
+
+@import "side-nav"
 
 //....................................Main Slider........................................
 
@@ -162,3 +182,8 @@ body
 //....................................Delivery........................................
 
 @import "delivery/delivery"
+
+//....................................Menu........................................
+
+@import "menu/menu"
+@import "menu/card"
