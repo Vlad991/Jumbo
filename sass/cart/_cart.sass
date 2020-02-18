@@ -1,0 +1,143 @@
+@import "sass/varialble"
+@import "sass/function"
+
+.container__cart
+  margin-top: 21px
+
+.cart
+  display: flex
+  margin-bottom: 100px
+
+.cart__prd-list
+  flex-shrink: 0
+
+.prd-list
+  width: 848px
+  height: 390px
+  border-collapse: collapse
+  border-spacing: 0 50px
+
+.prd-list__head
+  height: 80px
+  border: 1px solid #E68336
+  box-sizing: border-box
+  display: flex
+  justify-content: space-between
+  padding: 0 65px 0 220px
+
+.prd-list__head-item
+  @include fontFSC($goth-m, 16px, $clr)
+  line-height: 80px
+  &:nth-child(2)
+    width: 100px
+
+.prd-list__body
+  padding: 80px 17px
+  box-sizing: border-box
+  border: 1px solid #E68336
+
+.prd-list__row
+  height: 150px
+
+.prd-list__column
+  padding: 0
+
+.prd-list__col-img
+
+.prd-list__col-name
+  @include fontFSC($goth-m, 16px, $clr)
+  line-height: 150px
+
+.prd-list__col-quantity
+  height: 34px
+  width: 104px
+  background-color: #646161
+  margin-top: 58px
+
+.prd-list__plus
+  @include fontFSC($goth-r, 14px)
+  line-height: 34px
+  width: 40px
+  text-align: center
+  cursor: pointer
+
+.prd-list__qnt-value
+  @include fontFSC($goth-r, 14px)
+  line-height: 34px
+
+.prd-list__price
+  @include fontFSC($goth-b, 24px)
+  line-height: 150px
+
+.prd-list__cross
+  width: 17px
+  height: 17px
+  margin-top: 67px
+
+.cart__cart-checkout
+  flex-shrink: 1
+  margin-left: 30px
+
+.cart-checkout
+
+.cart-checkout__wrap
+
+.cart-checkout__heading
+  @include fontFSC($goth-m, 20px)
+  line-height: 20px
+
+.cart-checkout__sub-heading
+  @include fontFSC($goth-m, 16px)
+  line-height: 20px
+  margin-top: 25px
+
+.cart-checkout__radio
+  margin-top: 18px
+
+.cart-checkout__delivery
+  width: 262px
+  height: 196px
+  border: 1px solid #E34035
+  padding: 41px 20px
+  box-sizing: border-box
+  margin-top: 25px
+  svg
+    margin-top: 19px
+    margin-right: 16px
+
+.cart-checkout__delivery-text
+  @include fontFSC($goth-m, 16px, #E34035)
+  line-height: 20px
+  width: 220px
+
+.cart-checkout__date
+
+.cart-checkout__footer
+  margin-top: 37px
+  border-top: 1px solid #fff
+  padding: 26px 0 0
+
+.cart-checkout__foot-sum
+  display: flex
+  justify-content: flex-end
+  margin-bottom: 16px
+
+.cart-checkout__foot-item
+  margin-right: 15px
+  @include fontFSC($goth-r, 16px)
+  line-height: 15px
+
+.cart-checkout__foot-value
+  @include fontFSC($goth-r, 16px)
+  line-height: 15px
+
+.cart-checkout__foot-item_bold
+  @include fontFSC($goth-b, 16px)
+  line-height: 15px
+
+.cart-checkout__foot-value_bold
+  @include fontFSC($goth-b, 16px)
+  line-height: 15px
+
+.cart-checkout__button
+  margin-top: 45px
