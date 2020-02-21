@@ -179,6 +179,42 @@ body
       border-radius: 50%
       background: $orange
 
+.check-wrap
+  display: block
+  position: relative
+  padding-left: 40px
+  padding-right: 20px
+  margin-bottom: 12px
+  @include fontFSC($goth-r, 16px)
+  line-height: 25px
+  cursor: pointer
+  user-select: none
+  .check
+    position: absolute
+    opacity: 0
+    cursor: pointer
+    &:checked ~ .check-label
+      &::after
+        display: block
+  .check-label
+    position: absolute
+    top: 0
+    left: 0
+    height: 20px
+    width: 20px
+    background-color: transparent
+    border: 1px solid #fff
+    box-sizing: border-box
+    &::after
+      content: url('../img/checkout/check.svg')
+      position: absolute
+      fill: $orange
+      display: none
+      top: -2px
+      left: 3px
+      width: 20px
+      height: 15px
+
 .select-wrap
   position: relative
   cursor: pointer
@@ -269,3 +305,8 @@ body
 //....................................Cart........................................
 
 @import "cart/cart"
+
+//....................................Checkout........................................
+
+@import "checkout/checkout"
+@import "checkout/thanks"

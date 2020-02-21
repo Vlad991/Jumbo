@@ -1,0 +1,133 @@
+@import "sass/varialble"
+@import "sass/function"
+
+.container__checkout
+
+.checkout
+  min-height: 1000px
+
+.checkout__heading
+  @include fontFSC($goth-m, 24px)
+  line-height: 23px
+  margin-top: 30px
+
+.checkout__heading_addr
+
+.checkout__address
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin-top: 6px
+
+.checkout__input
+  margin-top: 20px
+  width: 48.5%
+  &:nth-child(1), &:nth-child(2)
+    margin-top: 0
+
+.input-check
+  height: 62px
+  border-bottom: 1px solid #fff
+  transition: all 0.2s ease-in-out
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  .input-check__title
+    display: block
+    @include fontFSC($goth-r, 14px, #C4C4C4)
+    line-height: 13px
+  .input-check__input
+    width: 100%
+    @include fontFSC($goth-m, 18px)
+    line-height: 17px
+    background-color: transparent
+    border: none
+    height: 30px
+    margin-top: 4px
+
+.checkout__input_many
+  display: flex
+  justify-content: space-between
+  margin-top: 14px
+  .checkout__input
+    margin-top: 0
+  .input-check
+    width: 21%
+
+.checkout__heading_payment
+  margin-top: 45px
+
+.checkout__radio
+  margin-top: 17px
+  svg
+    margin-left: 16px
+    vertical-align: middle
+
+.checkout__change
+  margin-top: 31px
+  display: flex
+
+.checkout__change-text
+  @include fontFSC($goth-r, 16px)
+  line-height: 25px
+
+.checkout__change-input
+  height: 30px
+  width: 115px
+  margin-left: 23px
+  .input-check__input
+    margin: 0
+    @include fontFSC($goth-r, 16px)
+    line-height: 15px
+    text-align: center
+    height: 30px
+
+.checkout__checkout-footer
+  margin-top: 40px
+  margin-bottom: 60px
+
+.checkout-footer
+  border-top: 1px solid #fff
+
+.checkout-footer__comment
+  margin-top: 38px
+
+.checkout-footer__comment-txt
+  @include fontFSC($goth-r, 14px, #C4C4C4)
+  line-height: 13px
+
+.checkout-footer__comment-field
+  margin-top: 15px
+  height: 145px
+  width: 49%
+  padding: 20px
+  background-color: transparent
+  border: 1px solid #FFF
+  box-sizing: border-box
+  outline: none
+  resize: none
+  @include fontFSC($goth-r, 14px, #fff)
+
+.checkout-footer__check
+  margin-top: 15px
+
+.checkout-footer__sum
+  margin-top: 34px
+  width: 276px
+
+.checkout-footer__sum-item
+  display: flex
+  justify-content: space-between
+  margin-top: 16px
+
+.checkout-footer__sum-text
+  @include fontFSC($goth-b, 16px)
+  line-height: 15px
+
+.checkout-footer__sum-value
+  width: 40%
+  @include fontFSC($goth-b, 16px)
+  line-height: 15px
+
+.checkout-footer__button
+  margin-top: 40px

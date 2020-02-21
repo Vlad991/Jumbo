@@ -1,0 +1,29 @@
+container__checkout
+    checkout
+        checkout__heading checkout__heading_addr
+        checkout__address
+            checkout__input
+                input-check
+                    input-check__title
+                    input-check__input
+        checkout__heading checkout__heading_payment
+        checkout__radio
+        checkout__change
+            checkout__change-text
+            checkout__change-input
+        checkout__checkout-footer
+            checkout-footer
+                checkout-footer__comment
+                    checkout-footer__comment-txt
+                    checkout-footer__comment-field
+                checkout-footer__check
+                checkout-footer__sum
+                    checkout-footer__sum-text
+                    checkout-footer__sum-value
+                checkout-footer__button
+
+container__thanks
+    thanks
+        thanks__heading
+        thanks__text
+        thanks__button
