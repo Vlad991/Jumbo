@@ -26,6 +26,7 @@ body
 .container
   background: url("../img/main/bg.jpg")
   background-size: cover
+  position: relative
 
 .container_no-bg
   background: none
@@ -138,6 +139,8 @@ body
 
 .link
   @include fontFSC($goth-m, 14px, $clr)
+  cursor: pointer
+  transition: all 0.2s ease-in-out
   &:hover
     color: $orange
 
@@ -310,3 +313,13 @@ body
 
 @import "checkout/checkout"
 @import "checkout/thanks"
+
+//....................................Account........................................
+
+@import "account/elements"
+@import "account/hat"
+@import "account/header"
+@import "account/nav"
+@import "account/account"
+@import "account/sections/main"
+@import "account/sections/my-info"

@@ -1,0 +1,83 @@
+button-acc
+
+input-acc
+    input-acc__label
+    input-acc__input
+
+account__heading
+
+account__sub-heading
+
+hat-col
+    hat-col__value
+    hat-col__text
+    hat-col__arrow
+    hat-col__col-list
+        hat-col__col-item
+            hat-col__col-item-img
+            hat-col__col-item-text
+
+account__acc-footer
+    acc-footer
+        acc-footer__back
+        acc-footer__button
+
+
+container__account-hat
+    account-hat
+        account-hat__hat-first-col
+            hat-first-col
+                hat-first-col__currency
+                hat-first-col__language
+        account-hat__hat-second-col
+            hat-second-col
+                hat-second-col__phone
+                hat-second-col__personal
+                hat-second-col__cart
+                hat-second-col__checkout
+
+container__account-header
+    account-header
+        account-header__first-col
+            account-header__logo
+            account-header__location
+        account-header__second-col
+            account-header__search
+                account-header__search-input
+                account-header__search-btn
+            account-header__cart-btn
+                account-header__cart-img
+                account-header__cart-txt
+                account-header__cart-value
+
+
+container__account-nav
+    account-nav
+        account-nav__item
+
+container__account
+    account
+        account__account-body
+            account-body
+                ...
+        account__account-sidebar
+            account-sidebar
+                account-sidebar__item
+
+account-body__account-main
+    account-main
+        account-main__heading
+        account-main__body
+            account-main__item
+
+account-body__my-info
+    my-info
+        my-info__heading
+        my-info__sub-heading
+        my-info__list
+            my-info__item
+        my-info__footer
+
+account-body__acc-page
+    acc-page
+

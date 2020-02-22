@@ -1,0 +1,20 @@
+@import "sass/varialble"
+@import "sass/function"
+
+.container__account-nav
+  background-color: #2E2E2E
+
+.account-nav
+  display: flex
+  min-height: 50px
+  flex-wrap: wrap
+  justify-content: space-between
+
+.account-nav__item
+  @include fontFSC($goth-r, 14px)
+  line-height: 50px
+  padding: 0 9px
+  box-sizing: border-box
+  transition: all 0.2s ease-in-out
+  &:hover
+    background-color: #191717
