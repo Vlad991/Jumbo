@@ -10,8 +10,14 @@
 
 .card__inner
   background: $bg-clr
-  padding: 35px 20px 46px
+  padding: 35px 0 0
   box-sizing: border-box
+  height: 100%
+  width: 100%
+
+.card__fixed
+  max-width: 185px
+  margin: 0 auto
 
 .card__heading
   @include fontFSC($goth-m, 16px)
@@ -19,7 +25,7 @@
   text-align: center
 
 .card__img
-  height: 173px
+  display: block
 
 .card__price-weight
 

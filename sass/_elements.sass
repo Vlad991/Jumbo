@@ -120,8 +120,16 @@
   @include fontFSC($goth-m, 14px, $clr)
   cursor: pointer
   transition: all 0.2s ease-in-out
+  svg
+    transition: all 0.2s ease-in-out
+    path
+      transition: all 0.2s ease-in-out
   &:hover
     color: $orange
+    svg
+      fill: $orange
+      path
+        fill: $orange
 
 .radio-wrap
   display: block
