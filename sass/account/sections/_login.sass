@@ -1,0 +1,83 @@
+@import "sass/varialble"
+@import "sass/function"
+
+.container__login
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgba(255, 255, 255, 0.2)
+  padding: 0.01%
+  box-sizing: border-box
+
+.login
+  width: 685px
+  height: 754px
+  margin: 150px auto
+  background-color: $bg-clr
+  position: relative
+  padding: 45px
+  box-sizing: border-box
+
+.login__cross
+  position: absolute
+  top: 43px
+  right: 43px
+  cursor: pointer
+
+.login__logo
+  margin: 0 auto
+  display: block
+
+.login__heading
+  margin-top: 60px
+  @include fontFSC($goth-b, 24px)
+  line-height: 25px
+  text-align: center
+
+.login__sub-heading
+  width: 281px
+  margin: 25px auto 0
+  @include fontFSC($goth-b, 18px)
+  line-height: 25px
+  text-align: center
+
+.login__sub-heading_ways
+  margin-top: 45px
+
+.login__input
+  width: 445px
+  margin: 45px auto 0
+  flex-direction: column
+  label
+    text-align: left
+    width: 100%
+    margin-right: 0
+  input
+    width: 100%
+
+.login__button
+  margin: 45px auto 0
+  padding: 0 65px
+
+.login__ways-list
+  margin-top: 25px
+  display: flex
+  justify-content: center
+
+.login__way-item
+  width: 30px
+  height: 30px
+  border-radius: 50%
+  margin-left: 25px
+  &:first-child
+    margin-left: 0
+
+.login__link
+  text-decoration: underline
+  @include fontFSC($goth-b, 18px)
+  line-height: 25px
+  text-align: center
+  margin: 15px auto 0
+  display: block

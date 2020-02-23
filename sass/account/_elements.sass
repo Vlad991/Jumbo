@@ -12,6 +12,9 @@
   display: flex
   outline: none
   cursor: pointer
+  transition: all 0.2s ease-in-out
+  &:hover
+    box-shadow: 0 0 10px #e5472e
   span
     @include fontFSC($goth-m, 14px)
     line-height: 45px
@@ -42,8 +45,11 @@
   border: 1px solid $clr
   padding: 13px 19px
   box-sizing:  border-box
+  box-shadow: none
   @include fontFSC($goth-m, 14px)
   line-height: 20px
+  &:focus
+    border: 1px solid $orange
 
 .account__heading
   @include fontFSC($goth-b, 18px)
@@ -107,6 +113,7 @@
 .account__acc-footer
   margin-top: 45px
   margin-left: auto
+  margin-bottom: 100px
   width: 80%
 
 .acc-footer

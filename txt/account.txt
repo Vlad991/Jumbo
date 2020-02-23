@@ -81,3 +81,16 @@ account-body__my-info
 account-body__acc-page
     acc-page
 
+container__login
+    login
+        login__cross
+        login__logo
+        login__heading
+        login__sub-heading
+        login__input
+            input-acc
+                input-acc__label
+                input-acc__input
+        login__button
+        login__ways-list
+            login__way-item
