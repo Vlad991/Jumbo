@@ -7,10 +7,12 @@
 .main-slider
   background-image: url("../../img/main-page/main-slider/bg.svg")
   background-repeat: no-repeat
-  background-position: 630px -66px
+  background-position: 133% -66px
   min-height: 676px
   padding: 0.01%
   position: relative
+  @include desktopBig
+    background-position: right -66px
 
 .main-slider__main-heading
   margin-top: 153px
@@ -47,6 +49,10 @@
 .main-slider__socials-item
   display: block
   margin-bottom: 22px
+  &:hover
+    svg
+      path
+        fill: $orange
 
 .main-slider__button
   position: absolute

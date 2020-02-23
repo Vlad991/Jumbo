@@ -4,6 +4,7 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create();
+var cache = require('gulp-cache');
 
 function cssStyle(done) {
     gulp.src('./sass/**/*.sass')
@@ -45,6 +46,7 @@ function sync(done) {
 }
 
 function browserReload(done) {
+    cache.clearAll();
     browserSync.reload();
     done();
 }

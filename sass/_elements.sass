@@ -1,0 +1,219 @@
+.container
+  background: url("../img/main/bg.jpg")
+  background-size: cover
+  position: relative
+
+.container_no-bg
+  background: none
+
+.container__fixed
+  max-width: 1140px
+  margin: 0 auto
+  padding-left: 20px
+  padding-right: 20px
+  @include desktopBig
+    max-width: 1360px
+  @include desktopLarge
+    max-width: 1535px
+
+.layout
+  display: flex
+  justify-content: space-between
+
+.container__heading
+  @include fontFSC($goth-b, 48px)
+  text-align: center
+  margin-top: 52px
+  line-height: 50px
+
+.container__title
+  @include fontFSC($goth-bl, 36px)
+  text-align: left
+  text-transform: uppercase
+  line-height: 34px
+  margin-top: 45px
+
+.container__location
+  @include fontFSC($goth-r, 14px, $clr)
+  text-align: left
+  line-height: 20px
+  cursor: pointer
+
+.container__back
+  @include fontFSC($goth-r, 14px, $clr)
+  line-height: 20px
+  margin-top: 22px
+  cursor: pointer
+  &:before
+    content: url("../img/main/back.svg")
+    display: inline-block
+    height: 15px
+    margin-right: 16px
+    vertical-align: sub
+  .container__back-text
+    display: inline-block
+
+.container__img
+  width: 100%
+
+.button
+  display: block
+  border-radius: 20px
+  background: url("../img/main/btn_tr.svg") no-repeat center
+  background-size: cover
+  border: none
+  height: 34px
+  width: 215px
+  text-align: center
+  line-height: 34px
+  @include fontFSC($goth-m, 16px, $orange)
+  text-transform: uppercase
+  box-sizing: border-box
+  padding: 0
+  cursor: pointer
+  transition: all 200ms ease-in-out
+  &:hover
+    background: $orange
+    @include fontFSC($goth-m, 16px)
+
+.button_long
+  background: url("../img/main/btn_tr_long.svg") no-repeat center
+  width: 262px
+  &:hover
+    width: 262px
+
+.button-org
+  display: block
+  background-color: $orange
+  border: none
+  height: 35px
+  width: 185px
+  text-align: center
+  line-height: 35px
+  @include fontFSC($goth-m, 14px)
+  text-transform: uppercase
+  box-sizing: border-box
+  padding: 0
+  cursor: pointer
+  transition: all 200ms ease-in-out
+  &:hover
+    background: #CD070F
+
+.input-field
+  display: block
+  height: 55px
+  width: 367px
+  box-sizing: border-box
+  padding: 18px 24px
+  background-color: transparent
+  border: 1px solid #C1BBBB
+  outline: none
+  @include fontFSC($goth-r, 19px)
+  &:focus
+    border: 1px solid $orange
+
+.input-field_area
+  height: 127px
+  resize: none
+
+.link
+  @include fontFSC($goth-m, 14px, $clr)
+  cursor: pointer
+  transition: all 0.2s ease-in-out
+  &:hover
+    color: $orange
+
+.radio-wrap
+  display: block
+  position: relative
+  padding-left: 40px
+  padding-right: 20px
+  margin-bottom: 12px
+  @include fontFSC($goth-r, 16px)
+  line-height: 25px
+  cursor: pointer
+  user-select: none
+  .radio
+    position: absolute
+    opacity: 0
+    cursor: pointer
+    &:checked ~ .radio-label
+      &::after
+        display: block
+  .radio-label
+    position: absolute
+    top: 0
+    left: 0
+    height: 20px
+    width: 20px
+    background-color: #fff
+    border-radius: 50%
+    border: 2px solid #DCE5E5
+    box-sizing: border-box
+    &::after
+      content: ""
+      position: absolute
+      display: none
+      top: 3px
+      left: 3px
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      background: $orange
+
+.check-wrap
+  display: block
+  position: relative
+  padding-left: 40px
+  padding-right: 20px
+  margin-bottom: 12px
+  @include fontFSC($goth-r, 16px)
+  line-height: 25px
+  cursor: pointer
+  user-select: none
+  .check
+    position: absolute
+    opacity: 0
+    cursor: pointer
+    &:checked ~ .check-label
+      &::after
+        display: block
+  .check-label
+    position: absolute
+    top: 0
+    left: 0
+    height: 20px
+    width: 20px
+    background-color: transparent
+    border: 1px solid #fff
+    box-sizing: border-box
+    &::after
+      content: url('../img/checkout/check.svg')
+      position: absolute
+      fill: $orange
+      display: none
+      top: -2px
+      left: 3px
+      width: 20px
+      height: 15px
+
+.select-wrap
+  position: relative
+  cursor: pointer
+  svg
+    position: absolute
+    top: 13px
+    right: 9px
+
+.select
+  height: 34px
+  width: 124px
+  padding: 9px 10px
+  box-sizing: border-box
+  border: none
+  border-radius: 0
+  background-color: #646161
+  outline: none
+  appearance: none
+  @include fontFSC($goth-r, 14px)
+  line-height: 16px
