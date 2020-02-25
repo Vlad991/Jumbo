@@ -5,6 +5,15 @@
 
 .contacts
   min-height: 613px
+  @include desktopSmall
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+
+.contacts__wrap
+  @include desktopSmall
+    display: flex
+    justify-content: space-between
 
 .contacts__cont-info
 
@@ -20,6 +29,10 @@
   max-width: 553px
   @include desktopBig
     max-width: 700px
+  @include desktopSmall
+    margin-top: 25px
+    height: 130px
+    flex: 1
 
 .cont-info__item
   display: flex
@@ -28,26 +41,36 @@
   max-width: 260px
   &:nth-child(3n+1)
     margin-top: 0
+  @include desktopSmall
+    max-width: 230px
 
 .cont-info__name
   @include fontFSC($goth-m, 16px)
   line-height: 20px
   max-width: 141px
+  @include desktopSmall
+    font-size: 14px
 
 .cont-info__value
   @include fontFSC($goth-m, 16px)
   line-height: 20px
   max-width: 163px
+  @include desktopSmall
+    font-size: 14px
 
 .cont-info__button
   margin-top: 45px
 
 .cont-info__soc-head
   margin-top: 45px
+  @include desktopSmall
+    display: none
 
 .cont-info__socials
   margin-top: 27px
   max-width: 103px
+  @include desktopSmall
+    display: none
 
 .cont-info__social
 
@@ -55,9 +78,14 @@
   margin-right: -65px
   @include desktopBig
     margin-right: -30px
+  @include desktopSmall
+    margin-top: 50px
 
 .map
   width: 625px
   height: 568px
   @include desktopBig
     width: 100%
+  @include desktopSmall
+    width: 100%
+    margin-bottom: 50px

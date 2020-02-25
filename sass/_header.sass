@@ -7,6 +7,9 @@
   padding: 25px 0
   background-color: $bg-clr
 
+.header_transparent
+  background-color: transparent
+
 .header__logo
 
 .header__menu
@@ -21,6 +24,7 @@
     z-index: 10
     flex-direction: column
     justify-content: flex-start
+    padding-top: 36px
 
 .header__menu-item
   @include fontFSC($goth-m, 14px)
@@ -33,13 +37,28 @@
     color: $orange
   @include desktopSmall
     text-align: center
-
-.header__menu-item
+    @include fontFSC($goth-m, 24px)
+    line-height: 70px
+    height: 70px
   &:last-child
     padding-right: 0
-
   &:first-child
     padding-left: 0
+
+.header__mobile-item
+  display: none
+  @include desktopSmall
+    display: block
+  &:nth-child(7)
+    margin-top: 46px
+
+.header__menu-mobile-socials
+  display: none
+  @include desktopSmall
+    display: flex
+    margin: 60px auto 0
+    width: 120px
+    justify-content: space-between
 
 .header__menu-item_active
   color: $orange
@@ -65,6 +84,7 @@
   svg path
     transition: all 0.2s ease-in-out
   @include desktopSmall
+    padding: 0 15px
     &:first-child
       display: none
     &:last-child
@@ -72,6 +92,7 @@
 
 .header__menu-button
   display: none
+  padding-right: 0
   @include desktopSmall
     display: block
     div

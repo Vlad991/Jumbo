@@ -5,6 +5,8 @@
 
 .catering
   min-height: 816px
+  @include desktopSmall
+    min-height: 670px
 
 .container__img
 
@@ -24,6 +26,8 @@
     font-size: 24px
     line-height: 30px
     width: 285px
+  @include tablet
+    width: 223px
 
 .advantage__list
   display: flex
@@ -42,6 +46,8 @@
   @include desktopSmall
     font-size: 14px
     line-height: 20px
+  @include tablet
+    width: 230px
 
 .catering__button
   text-align: right

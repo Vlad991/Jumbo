@@ -17,15 +17,39 @@
 .del-info__text
   @include fontFSC($goth-r, 14px)
   margin-top: 15px
+  line-height: 13px
+  @include desktopSmall
+    line-height: 20px
+    width: 50%
 
 .del-info__text_2
   margin-top: 35px
 
 .del-info__text_bold
   @include fontFSC($goth-b, 14px)
+  @include desktopSmall
+    width: 50%
+
+.del-info__ways
+  display: flex
+  height: 50px
+  width: 540px
+  svg
+    display: block
+    height: 50px
+    &:nth-child(2)
+      height: 41px
+  @include desktopSmall
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    width: 50%
+    height: auto
 
 .del-info__button
   margin-top: 35px
+  @include desktopSmall
+    margin-top: 45px
 
 .delivery__yourself
   margin-top: 39px
@@ -35,6 +59,8 @@
   background: url("../../img/delivery/yourself_bg.jpg") no-repeat top center
   background-size: cover
   padding: 0.01%
+  @include desktopSmall
+    height: 217px
 
 .yourself__heading
   text-align: center
@@ -47,9 +73,17 @@
   width: 674px
   margin: 30px auto 0
   line-height: 35px
+  @include desktopSmall
+    margin-top: 25px
+    font-size: 18px
+    line-height: 25px
+    width: 453px
 
 .yourself__text_red
   @include fontFSC($goth-m, 35px, #E34035)
+  @include desktopSmall
+    font-size: 20px
+    line-height: 25px
 
 .delivery__zone
 
@@ -72,12 +106,21 @@
 .z-map__description
   margin-top: 50px
   margin-bottom: 60px
+  @include desktopSmall
+    flex-wrap: wrap
+    margin-top: 35px
+    margin-bottom: 30px
 
 .z-map__item
   @include fontFSC($goth-m, 14px)
+  display: flex
+  width: 263px
+  div
+    flex-shrink: 1
   &::before
     content: ""
     display: inline-block
+    flex-shrink: 0
     height: 20px
     width: 20px
     vertical-align: middle
@@ -90,20 +133,36 @@
     background: #5FB709
   &:nth-child(4)::before
     background: #E34035
+  @include desktopSmall
+    margin-bottom: 25px
+    width: 287px
+    margin-left: 92px
+    &:nth-child(2n+1)
+      margin-left: 0
+    &::before
+      width: 40px
 
 .delivery__payment
   margin-top: 60px
+  @include desktopSmall
+    margin-top: 25px
 
 .payment
   height: 327px
+  @include desktopSmall
+    height: 225px
 
 .payment__heading
   text-align: center
   margin-top: 60px
+  @include desktopSmall
+    margin-top: 25px
 
 .payment__ways
   margin: 60px auto 0
   width: 580px
+  @include desktopSmall
+    margin-top: 30px
 
 .payment__way
   width: 255px

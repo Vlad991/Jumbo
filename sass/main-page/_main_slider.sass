@@ -14,10 +14,11 @@
   @include desktopBig
     background-position: right -66px
   @include desktopSmall
-    background-position: 266px -66px
+    background-position: 450px 25px
+    min-height: 790px
 
 .main-slider__main-heading
-  margin-top: 153px
+  margin-top: 139px
 
 .main-heading
   width: 655px
@@ -30,12 +31,14 @@
   text-transform: uppercase
   @include desktopSmall
     font-size: 64px
+    line-height: 70px
 
 .main-heading__second
   @include fontFSC($gill-b, 72px)
   @include grad()
   @include desktopSmall
     font-size: 64px
+    line-height: 70px
 
 .main-slider__wrapper
   display: flex
@@ -46,6 +49,8 @@
 
 .dots__wrapper
   margin-top: 138px
+  @include desktopSmall
+    margin-top: 232px
 
 .main-slider__socials
   display: flex
@@ -64,6 +69,9 @@
   position: absolute
   top: 125px
   left: 97px
+  @include desktopSmall
+    top: 33px
+    left: 0
 
 .button_orange
 
@@ -84,3 +92,6 @@
   position: absolute
   bottom: -94px
   right: 295px
+  @include desktopSmall
+    bottom: -44px
+    right: 60px

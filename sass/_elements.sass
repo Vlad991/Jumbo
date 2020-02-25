@@ -11,12 +11,15 @@
   margin: 0 auto
   padding-left: 20px
   padding-right: 20px
+  box-sizing: border-box
   @include desktopBig
     max-width: 1360px
   @include desktopLarge
     max-width: 1535px
   @include desktopSmall
-    max-width: 728px
+    max-width: 890px
+  @include tablet
+    max-width: 100%
 
 .layout
   display: flex
@@ -29,6 +32,7 @@
   line-height: 50px
   @include desktopSmall
     font-size: 36px
+    margin-top: 40px
 
 .container__title
   @include fontFSC($goth-bl, 36px)
@@ -36,6 +40,9 @@
   text-transform: uppercase
   line-height: 34px
   margin-top: 45px
+  @include desktopSmall
+    font-size: 24px
+    line-height: 23px
 
 .container__location
   @include fontFSC($goth-r, 14px, $clr)
@@ -247,6 +254,20 @@
   &:hover
     span
       background-color: $orange
+
+.menu-button_active
+  position: relative
+  .menu-button__line
+    position: absolute
+    &:first-child
+      transform: rotate(-45deg)
+      top: 10px
+    &:nth-child(2)
+      display: none
+    &:last-child
+      transform: rotate(45deg)
+      bottom: 10px
+
 
 .menu-button__line
   display: block

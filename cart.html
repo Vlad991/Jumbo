@@ -256,18 +256,20 @@
         </div>
         <form class="cart__cart-checkout cart-checkout">
             <div class="cart-checkout__wrap">
-                <div class="cart-checkout__heading">Оформити замовлення</div>
-                <div class="cart-checkout__sub-heading">Cпoсіб доставки замовлення:</div>
-                <label for="takeYourself" class="cart-checkout__radio radio-wrap">
-                    Заберу сам - 20% (Київ, Голосіїївський проспект 87 б, рк «Двір Голосіївський»)
-                    <input id="takeYourself" type="radio" class="radio" name="delivery" checked="checked">
-                    <span class="radio-label"></span>
-                </label>
-                <label for="delivery" class="cart-checkout__radio radio-wrap">
-                    Доставка кур’єром (на замовлення від 3000 грн – доставка в подарунок)
-                    <input id="delivery" type="radio" class="radio" name="delivery">
-                    <span class="radio-label"></span>
-                </label>
+                <div class="cart-checkout__first-col">
+                    <div class="cart-checkout__heading">Оформити замовлення</div>
+                    <div class="cart-checkout__sub-heading">Cпoсіб доставки замовлення:</div>
+                    <label for="takeYourself" class="cart-checkout__radio radio-wrap">
+                        Заберу сам - 20% (Київ, Голосіїївський проспект 87 б, рк «Двір Голосіївський»)
+                        <input id="takeYourself" type="radio" class="radio" name="delivery" checked="checked">
+                        <span class="radio-label"></span>
+                    </label>
+                    <label for="delivery" class="cart-checkout__radio radio-wrap">
+                        Доставка кур’єром (на замовлення від 3000 грн – доставка в подарунок)
+                        <input id="delivery" type="radio" class="radio" name="delivery">
+                        <span class="radio-label"></span>
+                    </label>
+                </div>
                 <div class="cart-checkout__delivery">
                     <div class="cart-checkout__delivery-text">Доставка до 1 000 грн. тільки через</div>
                     <svg width="95" height="15" viewBox="0 0 95 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -323,7 +325,7 @@
                 <input id="certain" type="radio" class="radio" name="time">
                 <span class="radio-label"></span>
             </label>
-            <div class="layout">
+            <div class="layout cart-checkout__selections">
                 <div class="select-wrap">
                     <select name="" id="date" class="cart-checkout__date select">
                         <option value="" class="option">07.11.2019</option>

@@ -10,17 +10,25 @@
 
 .product__img
   width: 555px
+  @include desktopSmall
+    width: 349px
+    object-fit: contain
 
 .product__info
   width: 457px
   padding: 37px 0 0
   @include desktopBig
     width: 50%
+  @include desktopSmall
+    width: 347px
 
 .product__heading
   @include fontFSC($goth-bl, 36px)
   text-transform: uppercase
   line-height: 34px
+  @include desktopSmall
+    font-size: 24px
+    line-height: 30px
 
 .product__text
   @include fontFSC($goth-m, 16px, $clr)
@@ -40,12 +48,16 @@
 .product__min-weight
   @include fontFSC($goth-r, 16px)
   line-height: 20px
+  @include desktopSmall
+    width: 159px
 
 .product__price-qnt
   margin-top: 25px
   height: 59px
   border-bottom: 1px solid #fff
   box-sizing: border-box
+  @include desktopSmall
+    margin-top: 5px
 
 .product__quantity
   width: 104px
@@ -93,6 +105,9 @@
 .container__recommended
   margin-top: 61px
   margin-bottom: 61px
+  @include desktopSmall
+    margin-top: 45px
+    margin-bottom: 45px
 
 .recommended
 
@@ -102,6 +117,9 @@
 .recommended__heading
   @include fontFSC($goth-b, 36px)
   line-height: 34px
+  @include desktopSmall
+    font-size: 24px
+    line-height: 23px
 
 .recommended__slider
   margin-top: 45px

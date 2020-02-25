@@ -37,6 +37,11 @@
   text-align: right
   width: 18%
   margin-right: 15px
+  @include desktopSmall
+    height: 20px
+    line-height: 20px
+    margin-top: auto
+    margin-bottom: auto
 
 .input-acc__input
   width: 80%
@@ -54,11 +59,17 @@
 .account__heading
   @include fontFSC($goth-b, 18px)
   line-height: 17px
+  @include desktopSmall
+    font-size: 24px
+    line-height: 18px
 
 .account__sub-heading
   @include fontFSC($goth-r, 18px)
   line-height: 15px
   margin-top: 25px
+  @include desktopSmall
+    margin-top: 20px
+    line-height: 17px
 
 .hat-col
   display: flex

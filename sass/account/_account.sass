@@ -13,17 +13,25 @@
 
 .account-body
   width: 728px
+  @include desktopSmall
+    width: 100%
+    flex-shrink: 1
 
 .account-body__acc-page
 
 .acc-page
   .account__sub-heading
     line-height: 30px
+  @include desktopSmall
+    width: 80%
 
 .account__account-sidebar
 
 .account-sidebar
   width: 272px
+  @include desktopSmall
+    width: 255px
+    flex-shrink: 0
 
 .account-sidebar__item
   display: block
@@ -35,6 +43,14 @@
   transition: all 0.2s ease-in-out
   &:hover
     background-color: rgba(46, 46, 46, 0.5)
+  @include desktopSmall
+    height: 40px
+    padding-left: 20px
+    line-height: 40px
+    font-size: 14px
+    margin-top: 8px
+    &:first-child
+      margin-top: 0
 
 
 .account-sidebar__item_active

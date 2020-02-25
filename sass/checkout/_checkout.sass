@@ -18,12 +18,20 @@
   justify-content: space-between
   flex-wrap: wrap
   margin-top: 6px
+  @include tablet
+    margin-top: 25px
 
 .checkout__input
   margin-top: 20px
   width: 48.5%
   &:nth-child(1), &:nth-child(2)
     margin-top: 0
+  @include tablet
+    margin-top: 40px
+    &:nth-child(2)
+      margin-top: 40px
+  @include tablet
+    width: 100%
 
 .input-check
   height: 62px
@@ -44,6 +52,8 @@
     border: none
     height: 30px
     margin-top: 4px
+  @include tablet
+    width: 100%
 
 .checkout__input_many
   display: flex
@@ -53,6 +63,8 @@
     margin-top: 0
   .input-check
     width: 21%
+  @include tablet
+    margin-top: 40px
 
 .checkout__heading_payment
   margin-top: 45px
@@ -107,6 +119,8 @@
   outline: none
   resize: none
   @include fontFSC($goth-r, 14px, #fff)
+  @include tablet
+    width: 100%
 
 .checkout-footer__check
   margin-top: 15px

@@ -10,9 +10,39 @@
 .menu__location
 
 .menu__delivery
+  @include desktopSmall
+    flex-direction: column
+    justify-content: space-between
+    min-height: 76px
+    width: 223px
+
+.menu__ways-list
+  display: flex
+  flex-wrap: wrap
+  margin-left: 12px
+  margin-top: -5px
   svg
-    margin-top: -10px
-    margin-left: 12px
+    margin-left: 15px
+    &:nth-child(1)
+      margin-left: 0
+    &:nth-child(2)
+      margin-top: -9px
+  @include desktopSmall
+    margin-top: 15px
+    margin-left: 0
+    svg
+      margin-left: 0
+      margin-bottom: 17px
+      &:nth-child(1)
+        width: 93px
+      &:nth-child(2)
+        width: 61px
+        margin-left: 15px
+      &:nth-child(3)
+        width: 89px
+      &:nth-child(4)
+        width: 103px
+        margin-left: 15px
 
 .menu__delivery-text
   @include fontFSC($goth-m, 16px)
@@ -21,17 +51,42 @@
   margin-top: 32px
   display: flex
   min-height: 951px
+  @include desktopSmall
+    position: relative
+    margin-top: 8px
+
+.menu__drop-down
+  display: none
+  @include desktopSmall
+    display: flex
+    position: absolute
+    top: -42px
+    left: 0
+
+.menu__drop-text
+  @include fontFSC($goth-b, 16px)
+  line-height: 15px
+
+.menu__drop-arrow
+  margin-left: 12px
+  height: 15px
 
 .menu__side-nav
+  @include desktopSmall
+    position: absolute
+    display: none
 
 .menu__products
+
+.products
   padding: 0 0 0 30px
   box-sizing: border-box
   display: flex
   flex-wrap: wrap
   flex: auto
-
-.products
+  @include desktopSmall
+    display: flex
+    padding: 0
 
 .products__card
   margin: 0 15px 20px 0

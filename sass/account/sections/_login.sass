@@ -13,12 +13,16 @@
 
 .login
   width: 685px
-  height: 754px
+  min-height: 754px
   margin: 150px auto
   background-color: $bg-clr
   position: relative
   padding: 45px
   box-sizing: border-box
+  @include desktopSmall
+    width: 476px
+    min-height: 638px
+    padding: 33px
 
 .login__cross
   position: absolute
@@ -29,12 +33,16 @@
 .login__logo
   margin: 0 auto
   display: block
+  @include desktopSmall
+    margin-top: 11px
 
 .login__heading
   margin-top: 60px
   @include fontFSC($goth-b, 24px)
   line-height: 25px
   text-align: center
+  @include desktopSmall
+    margin-top: 45px
 
 .login__sub-heading
   width: 281px
@@ -42,6 +50,9 @@
   @include fontFSC($goth-b, 18px)
   line-height: 25px
   text-align: center
+  @include desktopSmall
+    font-size: 16px
+    line-height: 20px
 
 .login__sub-heading_ways
   margin-top: 45px
@@ -56,6 +67,14 @@
     margin-right: 0
   input
     width: 100%
+  @include desktopSmall
+    width: 349px
+    label
+      font-size: 18px
+      line-height: 25px
+      height: 27px
+    input
+      margin-top: 10px
 
 .login__button
   margin: 45px auto 0
@@ -81,3 +100,6 @@
   text-align: center
   margin: 15px auto 0
   display: block
+  @include desktopSmall
+    font-size: 16px
+    line-height: 20px

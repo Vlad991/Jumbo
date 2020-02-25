@@ -7,6 +7,8 @@
 .cart
   display: flex
   margin-bottom: 100px
+  @include desktopSmall
+    flex-direction: column
 
 .cart__prd-list
   flex: none
@@ -16,6 +18,8 @@
   min-height: 390px
   border-collapse: collapse
   border-spacing: 0 50px
+  @include desktopSmall
+    width: 100%
 
 .prd-list__head
   height: 80px
@@ -24,35 +28,50 @@
   display: flex
   justify-content: space-between
   padding: 0 65px 0 220px
+  @include desktopSmall
+    height: 60px
 
 .prd-list__head-item
   @include fontFSC($goth-m, 16px, $clr)
   line-height: 80px
   &:nth-child(2)
     width: 100px
+  @include desktopSmall
+    font-size: 14px
+    line-height: 60px
 
 .prd-list__body
-  padding: 80px 17px
+  padding: 15px 20px
   box-sizing: border-box
   border: 1px solid #E68336
+  @include desktopSmall
+    padding: 25px 33px
 
 .prd-list__row
   height: 150px
+  @include desktopSmall
+    height: 119px
 
 .prd-list__column
   padding: 0
 
 .prd-list__col-img
+  @include desktopSmall
+    height: 119px
 
 .prd-list__col-name
   @include fontFSC($goth-m, 16px, $clr)
   line-height: 150px
+  @include desktopSmall
+    line-height: 119px
 
 .prd-list__col-quantity
   height: 34px
   width: 104px
   background-color: #646161
   margin-top: 58px
+  @include desktopSmall
+    margin-top: 42px
 
 .prd-list__plus
   @include fontFSC($goth-r, 14px)
@@ -68,19 +87,33 @@
 .prd-list__price
   @include fontFSC($goth-b, 24px)
   line-height: 150px
+  @include desktopSmall
+    line-height: 119px
 
 .prd-list__cross
   width: 17px
   height: 17px
   margin-top: 67px
+  @include desktopSmall
+    margin-top: 50px
 
 .cart__cart-checkout
   flex: 1
   margin-left: 30px
+  @include desktopSmall
+    margin-top: 45px
+    margin-left: 0
 
 .cart-checkout
 
 .cart-checkout__wrap
+  @include desktopSmall
+    display: flex
+    justify-content: space-between
+
+.cart-checkout__first-col
+  @include desktopSmall
+    width: 286px
 
 .cart-checkout__heading
   @include fontFSC($goth-m, 20px)
@@ -94,6 +127,10 @@
 .cart-checkout__radio
   margin-top: 18px
 
+.cart-checkout__selections
+  @include desktopSmall
+    width: 286px
+
 .cart-checkout__delivery
   max-width: 482px
   height: 196px
@@ -104,11 +141,16 @@
   svg
     margin-top: 19px
     margin-right: 16px
+  @include desktopSmall
+    width: 347px
+    padding: 34px 25px
 
 .cart-checkout__delivery-text
   @include fontFSC($goth-m, 16px, #E34035)
   line-height: 20px
   width: 220px
+  @include desktopSmall
+    width: 100%
 
 .cart-checkout__date
 
@@ -116,6 +158,8 @@
   margin-top: 37px
   border-top: 1px solid #fff
   padding: 26px 0 0
+  @include desktopSmall
+    width: 286px
 
 .cart-checkout__foot-sum
   display: flex
