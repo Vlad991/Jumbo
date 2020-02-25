@@ -11,42 +11,72 @@
     <header class="container__header header">
         <div class="container__fixed layout">
             <a href="/" class="header__logo"><img src="./img/header/logo.svg" alt="Logo"></a>
-            <div class="header__menu layout">
+            <nav class="header__menu layout">
                 <a href="#" class="header__menu-item header__menu-item_active">меню</a>
                 <a href="#" class="header__menu-item">кейтерінг</a>
                 <a href="#" class="header__menu-item">Ресторани</a>
                 <a href="#" class="header__menu-item">Чому ми?</a>
                 <a href="#" class="header__menu-item">доставка та оплата</a>
                 <a href="#" class="header__menu-item">контакти</a>
-            </div>
+            </nav>
             <div class="header__small-items layout">
-                <a href="#" class="link header__small-item">
-                    <span class="link">068 121 21 22</span>
-                    <svg class="header__arrow-after" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="link header__small-item header-drop">
+                    <div class="link header-drop__text">068 121 21 22</div>
+                    <svg class="header-drop__arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.90008 0.685243L9.39911 0.184311C9.33236 0.117418 9.25546 0.0840759 9.16853 0.0840759C9.08181 0.0840759 9.00494 0.117418 8.93819 0.184311L5.00005 4.12224L1.06209 0.184417C0.995301 0.117523 0.918439 0.0841812 0.831611 0.0841812C0.744747 0.0841812 0.667886 0.117523 0.601132 0.184417L0.100235 0.685384C0.0333416 0.752137 0 0.828998 0 0.915862C0 1.00266 0.0334469 1.07952 0.100235 1.14627L4.76957 5.81571C4.83633 5.8825 4.91322 5.91588 5.00005 5.91588C5.08688 5.91588 5.16364 5.8825 5.23036 5.81571L9.90008 1.14627C9.96683 1.07948 10 1.00262 10 0.915862C10 0.828998 9.96683 0.752137 9.90008 0.685243Z" fill="#E5E5E5"/>
                     </svg>
-                </a>
+                    <ul class="header-drop__col-list">
+                        <li class="header-drop__col-item">
+                            <div class="header-drop__col-item-text">068 121 21 22</div>
+                        </li>
+                        <li class="header-drop__col-item">
+                            <div class="header-drop__col-item-text">068 121 21 22</div>
+                        </li>
+                        <li class="header-drop__col-item">
+                            <div class="header-drop__col-item-text">068 121 21 22</div>
+                        </li>
+                    </ul>
+                </div>
                 <a href="#" class="link header__small-item">
-                    <svg class="small-item__img" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <rect width="25" height="25" fill="url(#pattern0)"/>
-                        <defs>
-                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                <use xlink:href="#image0" transform="scale(0.030303)"/>
-                            </pattern>
-                            <image id="image0" width="33" height="33" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAADg0lEQVRYhcWYTWjcRRjGf7uuthRas7XGakzEtIgehCCUBoWiiYjGShFFoRcpNQUFC4WK4sfJm6LiQQVPkmgqBSkiBONBejClBxVBQe2HCtvWtkZbrFgk1p+Hef/NEvf/0RjpCy+zO/PMO887s/PMzNZUKlo3cDMwAgwCvUAz2mrAr0AL2A9MAl8BJ6sErlUgsQZ4CHgcuAY4APwQ5QngD2AZcBVwA3B9lMeAN4DdwOHCEdQiH1Vb6qw6pj6gdpf06Q7cWPRrRZzcPnkNTXXCZLvVwZKB83ww+hvxmlVJ9KrTkcWounSBBDJfGnFmI25vGYlmAE+pwxUGuEwdUNeol5dghyPutNqVR2KJ+p56Rh2qmOVNpjX/K8od6soC/FDEn4jx/kViW6zd1oIga6M9y+QSdUPUjann1L2dprzNH41xts0nca16RN2jNgrW9vPI+IoczF3qjLrP/N9SI8Y5EuOeJ/GselZdV5DB9pj2jSVLdG/MyBMFmHUx3jMZiVXqUXVcrRV0/FKdKiGQ+VTg89prsXwtdVUdGACuBt4H8uRzNXAlMFUmr2FTgV+dp5HAHpICD9SBe4DvgH0FQbuAOjBTkcTPgW8WYKZJ0j9SB24DfqT4sDkeZX9FEv2kbI8XYE4C3wPr60BffCmy0yTWG0kZFlkduA84CJwqwR4A+uqkqf6pBAzwInALsLMEtzNwL1WIeQLoqpOY/10CXguMxucXgOeBFczNSj2+PxftAFsoX76zQK0BnKN4ijcBbwO/AU8BPcCTwFbgA9JFpjdwK4E3I8PHgM+AR4APc2IvAyA04vWc/bw5JPYTtb+tfkTdpX6hHo5yVwhVu8Tvjf6bc+K/prZQ96sfdQDcqv6uTqrLc4I01evMuSeoK0K4zqjrO7RPqtOoL6sH1Z62xuXqN5FhV84AVb0Z6vn1vGS61W/VVzAdr7PqpjbAdpO23/0fCbQv35+moz6ru990xtyRMd1huhtgOp4PxVQtBoHM31Xfcu7seMc4OzqBN5huQA8vMolLnbsmZKfo0yqNDtvmdmAW+Lhkj1+ozUbZIOnMDDCeVcy3G4FfKJfchdoWkqyPAkehs0hVlfGF2BDwKjABjJ2v7bB246Z9feci/yaG1dOW3LYz71M/9SK+O9oF5qK+wNp9/lv0Qf+Ht+iFvsp7SFfBRX2VVyGRWdH/E5C29IL+n/gHBmwokvt8/7wAAAAASUVORK5CYII="/>
-                        </defs>
+                    <svg class="small-item__img" width="25" height="25" viewBox="0 0 417 418" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M211.9 1.00004C94.9198 -0.57996 -0.580204 94.92 0.999796 211.9C2.5598 324.09 93.9098 415.44 206.1 417C323.1 418.6 418.58 323.1 416.98 206.12C415.44 93.91 324.09 2.56004 211.9 1.00004ZM338.32 328.25C337.921 328.681 337.433 329.019 336.89 329.24C336.346 329.461 335.761 329.559 335.175 329.529C334.589 329.498 334.017 329.339 333.499 329.063C332.982 328.787 332.531 328.4 332.18 327.93C323.235 316.227 312.281 306.208 299.83 298.34C274.37 282 242.11 273 209 273C175.89 273 143.63 282 118.17 298.34C105.719 306.205 94.7647 316.221 85.8198 327.92C85.4684 328.39 85.0179 328.777 84.5003 329.053C83.9827 329.329 83.4107 329.488 82.8248 329.519C82.2388 329.549 81.6534 329.451 81.1099 329.23C80.5664 329.009 80.0781 328.671 79.6798 328.24C50.3365 296.564 33.7147 255.173 32.9998 212C31.3698 114.69 111.22 33.24 208.57 33C305.92 32.76 385 111.81 385 209C385.033 253.214 368.36 295.808 338.32 328.25Z" fill="white"/>
+                        <path d="M209 97C189.28 97 171.45 104.39 158.78 117.82C146.11 131.25 139.78 149.82 141.21 169.75C144.11 209 174.52 241 209 241C243.48 241 273.83 209 276.79 169.76C278.27 150.02 271.99 131.62 259.11 117.94C246.39 104.44 228.59 97 209 97Z" fill="white"/>
                     </svg>
                 </a>
-                <a href="#" class="link header__small-item header__small-item_cage small-item__cage"><img src="./img/header/cage.svg" alt="Cage" class="small-item__img"></a>
-                <a href="#" class="link header__small-item">
-                    <span class="link">RU</span>
-                    <svg class="header__arrow-after" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="#" class="link header__small-item header__small-item_cage small-item__cage">
+                    <svg class="small-item__img" width="25" height="25" viewBox="0 0 512 448" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M512 160H425.059L333.719 7.76598C329.189 0.203823 319.36 -2.26519 311.767 2.2818C304.188 6.82879 301.735 16.6564 306.282 24.2347L387.741 160H124.26L205.719 24.2336C210.266 16.6553 207.813 6.82771 200.234 2.28072C192.625 -2.26627 182.829 0.202746 178.282 7.7649L86.9422 159.999H0V191.999H34.7267L75.3749 408.827C79.6245 431.531 99.4682 448 122.563 448H389.438C412.532 448 432.375 431.531 436.61 408.844L477.272 191.999H512.001C512 191.999 512 160 512 160ZM405.156 402.953C403.75 410.515 397.14 416.001 389.437 416.001H122.563C114.86 416.001 108.251 410.517 106.829 402.938L67.2741 191.999H444.727L405.156 402.953Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="#" class="link header__small-item header__menu-button">
+                    <div class="menu-button">
+                        <span class="menu-button__line"></span>
+                        <span class="menu-button__line"></span>
+                        <span class="menu-button__line"></span>
+                    </div>
+                </a>
+                <div class="link header__small-item header-drop header-drop_lang">
+                    <div class="link header-drop__text">RU</div>
+                    <svg class="header-drop__arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.90008 0.685243L9.39911 0.184311C9.33236 0.117418 9.25546 0.0840759 9.16853 0.0840759C9.08181 0.0840759 9.00494 0.117418 8.93819 0.184311L5.00005 4.12224L1.06209 0.184417C0.995301 0.117523 0.918439 0.0841812 0.831611 0.0841812C0.744747 0.0841812 0.667886 0.117523 0.601132 0.184417L0.100235 0.685384C0.0333416 0.752137 0 0.828998 0 0.915862C0 1.00266 0.0334469 1.07952 0.100235 1.14627L4.76957 5.81571C4.83633 5.8825 4.91322 5.91588 5.00005 5.91588C5.08688 5.91588 5.16364 5.8825 5.23036 5.81571L9.90008 1.14627C9.96683 1.07948 10 1.00262 10 0.915862C10 0.828998 9.96683 0.752137 9.90008 0.685243Z" fill="#E5E5E5"/>
                     </svg>
-                </a>
+                    <ul class="header-drop__col-list">
+                        <li class="header-drop__col-item">
+                            <div class="header-drop__col-item-text">RU</div>
+                        </li>
+                        <li class="header-drop__col-item">
+                            <div class="header-drop__col-item-text">UKR</div>
+                        </li>
+                        <li class="header-drop__col-item">
+                            <div class="header-drop__col-item-text">EN</div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
+
+    <nav class="container__adaptive-nav"></nav>
 
     <section class="container__main-slider main-slider">
         <div class="container__fixed">
@@ -92,11 +122,11 @@
                 </div>
                 <div class="statistics__item">
                     <div class="statistics__value">109</div>
-                    <p class="statistics__description">авторських рецептів страв</p>
+                    <p class="statistics__description">авторських рецептів</p>
                 </div>
                 <div class="statistics__item">
                     <div class="statistics__value">100<span class="statistics__value_small">%</span></div>
-                    <p class="statistics__description">натуральні продукти без ГМО</p>
+                    <p class="statistics__description">натуральне без ГМО</p>
                 </div>
                 <div class="statistics__item">
                     <div class="statistics__value">57</div>
@@ -193,9 +223,13 @@
                 </div>
                 <div class="card-trans__price-qnt layout">
                     <div class="card-trans__quantity layout">
-                        <img src="img/main-page/hits/minus.svg" alt="Minus" class="card-trans__plus">
+                        <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM6 10V12H16V10H6Z" fill="#E5E5E5"/>
+                        </svg>
                         <div class="card-trans__price">1</div>
-                        <img src="img/main-page/hits/plus.svg" alt="Plus" class="card-trans__plus">
+                        <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM16 10H12V6H10V10H6V12H10V16H12V12H16V10Z" fill="#E5E5E5"/>
+                        </svg>
                     </div>
                     <div class="card-trans__price">329 грн</div>
                 </div>
@@ -210,9 +244,13 @@
                 </div>
                 <div class="card-trans__price-qnt layout">
                     <div class="card-trans__quantity layout">
-                        <img src="img/main-page/hits/minus.svg" alt="Minus" class="card-trans__plus">
+                        <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM6 10V12H16V10H6Z" fill="#E5E5E5"/>
+                        </svg>
                         <div class="card-trans__price">1</div>
-                        <img src="img/main-page/hits/plus.svg" alt="Plus" class="card-trans__plus">
+                        <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM16 10H12V6H10V10H6V12H10V16H12V12H16V10Z" fill="#E5E5E5"/>
+                        </svg>
                     </div>
                     <div class="card-trans__price">329 грн</div>
                 </div>
@@ -227,9 +265,13 @@
                 </div>
                 <div class="card-trans__price-qnt layout">
                     <div class="card-trans__quantity layout">
-                        <img src="img/main-page/hits/minus.svg" alt="Minus" class="card-trans__plus">
+                        <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM6 10V12H16V10H6Z" fill="#E5E5E5"/>
+                        </svg>
                         <div class="card-trans__price">1</div>
-                        <img src="img/main-page/hits/plus.svg" alt="Plus" class="card-trans__plus">
+                        <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM16 10H12V6H10V10H6V12H10V16H12V12H16V10Z" fill="#E5E5E5"/>
+                        </svg>
                     </div>
                     <div class="card-trans__price">329 грн</div>
                 </div>
@@ -244,9 +286,13 @@
                 </div>
                 <div class="card-trans__price-qnt layout">
                     <div class="card-trans__quantity layout">
-                        <img src="img/main-page/hits/minus.svg" alt="Minus" class="card-trans__plus">
+                        <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM6 10V12H16V10H6Z" fill="#E5E5E5"/>
+                        </svg>
                         <div class="card-trans__price">1</div>
-                        <img src="img/main-page/hits/plus.svg" alt="Plus" class="card-trans__plus">
+                        <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM16 10H12V6H10V10H6V12H10V16H12V12H16V10Z" fill="#E5E5E5"/>
+                        </svg>
                     </div>
                     <div class="card-trans__price">329 грн</div>
                 </div>
@@ -261,9 +307,13 @@
                 </div>
                 <div class="card-trans__price-qnt layout">
                     <div class="card-trans__quantity layout">
-                        <img src="img/main-page/hits/minus.svg" alt="Minus" class="card-trans__plus">
+                        <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM6 10V12H16V10H6Z" fill="#E5E5E5"/>
+                        </svg>
                         <div class="card-trans__price">1</div>
-                        <img src="img/main-page/hits/plus.svg" alt="Plus" class="card-trans__plus">
+                        <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM16 10H12V6H10V10H6V12H10V16H12V12H16V10Z" fill="#E5E5E5"/>
+                        </svg>
                     </div>
                     <div class="card-trans__price">329 грн</div>
                 </div>

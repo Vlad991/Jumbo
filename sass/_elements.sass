@@ -15,6 +15,8 @@
     max-width: 1360px
   @include desktopLarge
     max-width: 1535px
+  @include desktopSmall
+    max-width: 728px
 
 .layout
   display: flex
@@ -25,6 +27,8 @@
   text-align: center
   margin-top: 52px
   line-height: 50px
+  @include desktopSmall
+    font-size: 36px
 
 .container__title
   @include fontFSC($goth-bl, 36px)
@@ -59,8 +63,8 @@
 .button
   display: block
   border-radius: 20px
-  background: url("../img/main/btn_tr.svg") no-repeat center
-  background-size: cover
+  background-image: url("data:image/svg+xml,%3Csvg width='215' height='34' viewBox='0 0 215 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='213' height='32' rx='16' stroke='url(%23paint0_linear)' stroke-width='2'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='1.64541' y1='17' x2='229.236' y2='21.0341' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23E5E5E5'/%3E%3Cstop offset='1' stop-color='%23E5E5E5' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E")
+  background-color: transparent
   border: none
   height: 34px
   width: 215px
@@ -77,7 +81,8 @@
     @include fontFSC($goth-m, 16px)
 
 .button_long
-  background: url("../img/main/btn_tr_long.svg") no-repeat center
+  background-image: url("data:image/svg+xml,%3Csvg width='262' height='34' viewBox='0 0 262 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='260' height='32' rx='16' stroke='url(%23paint0_linear)' stroke-width='2'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='2.0051' y1='17' x2='279.306' y2='22.9897' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23E5E5E5'/%3E%3Cstop offset='1' stop-color='%23E5E5E5' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E")
+  background-color: transparent
   width: 262px
   &:hover
     width: 262px
@@ -120,12 +125,16 @@
   @include fontFSC($goth-m, 14px, $clr)
   cursor: pointer
   transition: all 0.2s ease-in-out
+  div
+    transition: all 0.2s ease-in-out
   svg
     transition: all 0.2s ease-in-out
     path
       transition: all 0.2s ease-in-out
   &:hover
     color: $orange
+    div
+      color: $orange
     svg
       fill: $orange
       path
@@ -225,3 +234,23 @@
   appearance: none
   @include fontFSC($goth-r, 14px)
   line-height: 16px
+
+.menu-button
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  width: 35px
+  height: 25px
+  background-color: transparent
+  span
+    transition: all 0.2s ease-in-out
+  &:hover
+    span
+      background-color: $orange
+
+.menu-button__line
+  display: block
+  height: 3px
+  border-radius: 2px
+  width: 100%
+  background-color: #fff

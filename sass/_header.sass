@@ -10,6 +10,17 @@
 .header__logo
 
 .header__menu
+  @include desktopSmall
+    display: none
+    position: absolute
+    top: 109px
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: $bg-clr
+    z-index: 10
+    flex-direction: column
+    justify-content: flex-start
 
 .header__menu-item
   @include fontFSC($goth-m, 14px)
@@ -20,6 +31,8 @@
   transition: all 0.2s ease-in-out
   &:hover
     color: $orange
+  @include desktopSmall
+    text-align: center
 
 .header__menu-item
   &:last-child
@@ -36,23 +49,33 @@
 .header__small-item
   display: block
   padding: 0 18px
-  span
-    line-height: 52px
-    @include fontFSC($goth-m, 14px)
-  svg path
-    transition: all 0.2s ease-in-out
-
-.header__small-item
+  transition: all 0.2s ease-in-out
   &:last-child
     padding-right: 0
   &:first-child
     padding-left: 0
-  transition: all 0.2s ease-in-out
   &:hover
     span
       color: $orange
     svg path
       fill: $orange
+  span
+    line-height: 52px
+    @include fontFSC($goth-m, 14px)
+  svg path
+    transition: all 0.2s ease-in-out
+  @include desktopSmall
+    &:first-child
+      display: none
+    &:last-child
+      display: none
+
+.header__menu-button
+  display: none
+  @include desktopSmall
+    display: block
+    div
+      margin-top: 16px
 
 .header__arrow-after
   display: inline-block
@@ -61,7 +84,8 @@
 
 .small-item__img
   display: block
-  margin-top: 14px
+  height: 100%
+  width: 100%
   position: relative
   z-index: 5
 
@@ -75,7 +99,72 @@
     border-radius: 50%
     background-color: #E68336
     position: absolute
-    top: 12px
+    top: 20px
     right: 12px
     z-index: 1
 
+.header-drop
+  display: flex
+  justify-content: space-between
+  cursor: pointer
+  position: relative
+  .header-drop__col-list
+    visibility: hidden
+    transition: all 0.2s ease-in-out
+  &:hover
+    .header-drop__col-list
+      transition: all 0.2s ease-in-out
+      visibility: visible
+    .header-drop__col-item-text
+      color: #fff
+      &:hover
+        color: $orange
+
+.header-drop__text
+  @include fontFSC($goth-b, 14px)
+  line-height: 55px
+  margin-left: 10px
+
+.header-drop__arrow
+  height: 57px
+  margin-left: 11px
+
+.header-drop__col-list
+  visibility: hidden
+  position: absolute
+  z-index: 1
+  top: 40px
+  left: -17px
+  width: 167px
+  //background-color: #2E2E2E
+  background-color: transparent
+  padding: 7px 0
+  box-sizing: border-box
+
+.header-drop__col-item
+  display: flex
+  height: 40px
+  padding: 0 17px
+  box-sizing: border-box
+  &:hover
+    background: transparent
+    //background: #191717
+
+.header-drop__col-item-img
+  height: 40px
+  line-height: 40px
+
+.header-drop__col-item-text
+  @include fontFSC($goth-b, 14px)
+  line-height: 44px
+  margin-left: 10px
+
+
+.header-drop_lang
+  .header-drop__col-list
+    width: 80px
+    left: 18px
+  .header-drop__col-item
+    padding: 0 10px
+  .header-drop__col-item-text
+    margin-left: 0

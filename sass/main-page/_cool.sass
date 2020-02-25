@@ -7,6 +7,8 @@
 
 .cool__statistics
   margin-top: 42px
+  @include desktopSmall
+    margin-top: 25px
 
 .statistics
 
@@ -21,19 +23,31 @@
   @include grad()
   line-height: 100px
   height: 100px
+  @include desktopSmall
+    font-size: 50px
+    line-height: 60px
+    height: 60px
 
 .statistics__value_small
   @include fontFSC($goth-m, 66px)
   @include grad()
+  @include desktopSmall
+    font-size: 37px
 
 .statistics__description
   @include fontFSC($goth-m, 18px)
   width: 174px
+  @include desktopSmall
+    font-size: 18px
+    line-height: 20px
+    width: 137px
 
 .cool__snake
   background-image: url("../../img/main-page/cool/bg.png")
   background-repeat: no-repeat
   background-position: 65% 23%
+  @include desktopSmall
+    background-size: 125%
 
 .snake
   display: flex
@@ -42,6 +56,8 @@
   min-height: 1811px
   padding: 192px 14px 127px 238px
   box-sizing: border-box
+  @include desktopSmall
+    padding: 192px 0 127px 63px
 
 .snake__img
 
@@ -49,10 +65,15 @@
   width: 456px
   &:nth-child(2n+1)
     align-self: flex-end
+  @include desktopSmall
+    width: 349px
 
 .snake__heading
   @include fontFSC($goth-r, 30px)
   width: 415px
+  @include desktopSmall
+    font-size: 24px
+    line-height: 30px
 
 .snake__description
   @include fontFSC($goth-m, 16px, $clr)

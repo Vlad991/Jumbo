@@ -10,30 +10,40 @@
   margin: 62px auto 0
 
 .product-slider
+  @include desktopSmall
+    >img
+      display: none
+    >div:nth-child(2), >div:nth-child(3)
+      display: none
 
 .product-slider__card-trans
 
 .card-trans
   width: 215px
-  height: 383px
+  height: 381px
   display: flex
   flex-direction: column
-  justify-content: space-between
 
 .card-trans__heading
   @include fontFSC($goth-m, 18px, $clr)
   text-align: center
   text-transform: uppercase
+  line-height: 17px
 
 .card-trans__img
+  width: 188px
+  display: block
+  margin: 33px auto 0
 
 .card-trans__price-weight
+  margin-top: 17px
   padding: 0 10px
 
 .card-trans__weight
   @include fontFSC($goth-b, 14px, rgba(229, 229, 229, 0.75))
 
 .card-trans__price-qnt
+  margin-top: 26px
   padding: 0 10px
 
 .card-trans__quantity
@@ -41,6 +51,9 @@
 
 .card-trans__plus
   cursor: pointer
+  &:hover
+    path
+      fill: $orange
 
 .card-trans__price
   @include fontFSC($goth-b, 18px, $clr)
@@ -49,7 +62,7 @@
 .card-trans__price
 
 .card-trans__button
-  margin: 0 auto
+  margin: 28px auto 0
 
 .product-slider__arrow
   cursor: pointer

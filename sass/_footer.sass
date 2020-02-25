@@ -29,6 +29,10 @@
 .foot-content__item
   @include fontFSC($goth-m, 14px, $clr)
   text-transform: uppercase
+  line-height: 13px
+  @include desktopSmall
+    font-size: 12px
+    line-height: 11px
 
 .foot-content__item_no-upper
   text-transform: none
@@ -51,6 +55,9 @@
 .basement__rights
   @include fontFSC($goth-r, 14px, $clr)
   line-height: 20px
+  @include desktopSmall
+    font-size: 12px
+    line-height: 11px
 
 .basement__by
   width: 208px

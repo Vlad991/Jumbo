@@ -13,6 +13,8 @@
   position: relative
   @include desktopBig
     background-position: right -66px
+  @include desktopSmall
+    background-position: 266px -66px
 
 .main-slider__main-heading
   margin-top: 153px
@@ -26,10 +28,14 @@
 .main-heading__first
   @include fontFSC($gill-b, 72px, #fff)
   text-transform: uppercase
+  @include desktopSmall
+    font-size: 64px
 
 .main-heading__second
   @include fontFSC($gill-b, 72px)
   @include grad()
+  @include desktopSmall
+    font-size: 64px
 
 .main-slider__wrapper
   display: flex
