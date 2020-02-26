@@ -2,19 +2,27 @@
 @import "sass/function"
 
 .container__catering
+  @include tabletSmall
+    margin-top: 25px
 
 .catering
   min-height: 816px
   @include desktopSmall
     min-height: 670px
+  @include tablet
+    min-height: 0
 
 .container__img
 
 .catering__advantage
   margin-top: 69px
+  @include tabletSmall
+    margin-top: 25px
 
 .advantage
   display: flex
+  @include tabletSmall
+    flex-direction: column
 
 .advantage__heading
   display: block
@@ -28,6 +36,9 @@
     width: 285px
   @include tablet
     width: 223px
+  @include tabletSmall
+    text-align: center
+    width: 100%
 
 .advantage__list
   display: flex
@@ -35,6 +46,11 @@
   height: 140px
   flex-wrap: wrap
   align-content: space-between
+  @include tabletSmall
+    margin-top: 25px
+  @include mobile
+    height: auto
+    width: 100%
 
 .advantage__item
   @include fontFSC($goth-r, 16px, $clr)
@@ -48,6 +64,10 @@
     line-height: 20px
   @include tablet
     width: 230px
+  @include tabletSmall
+    width: 200px
+  @include mobile
+    width: 100%
 
 .catering__button
   text-align: right

@@ -14,6 +14,8 @@
   top: 24%
   left: 0
   width: 100%
+  @include tablet
+    top: 15%
 
 .for-watch__heading
   @include fontFSC($goth-b, 48px)
@@ -23,6 +25,10 @@
   line-height: 50px
   @include desktopSmall
     font-size: 36px
+  @include tabletSmall
+    font-size: 24px
+    line-height: 30px
+    width: 273px
 
 .for-watch__play
   position: absolute
@@ -33,3 +39,6 @@
     display: block
     margin: 0 auto
     cursor: pointer
+  @include tabletSmall
+    img
+      width: 75px

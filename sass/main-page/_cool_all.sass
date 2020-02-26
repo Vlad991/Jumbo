@@ -4,11 +4,16 @@
 .container__cool-all
 
 .cool-all
+  .layout
+    @include tabletSmall
+      flex-direction: column
 
 .cool-all__action-block
   margin-top: 53px
   @include desktopSmall
     margin-top: 19px
+  @include tabletSmall
+    margin-top: 45px
 
 .action-block
   width: 265px
@@ -19,6 +24,10 @@
   @include desktopSmall
     width: 160px
     height: 269px
+  @include tabletSmall
+    width: 213px
+    height: auto
+    margin: 0 auto
 
 .action-block__heading
   @include fontFSC($goth-m, 24px, $clr)
@@ -41,6 +50,8 @@
     line-height: 20px
     img
       display: none
+  @include tabletSmall
+    height: auto
 
 .action-block__button
   margin: 0 auto
@@ -49,3 +60,5 @@
     height: 34px
     background-color: transparent
     background-image: url("data:image/svg+xml,%3Csvg width='160' height='34' viewBox='0 0 160 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='158' height='32' rx='16' stroke='url(%23paint0_linear)' stroke-width='2'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='1.22449' y1='17' x2='170.618' y2='19.2344' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23E5E5E5'/%3E%3Cstop offset='1' stop-color='%23E5E5E5' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A")
+  @include tabletSmall
+    margin-top: 25px

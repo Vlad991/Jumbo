@@ -10,6 +10,10 @@
   box-sizing: border-box
   @include desktopSmall
     height: 187px
+  @include tabletSmall
+    height: 380px
+  @include mobile
+    height: 503px
 
 .footer__foot-content
   margin-top: 45px
@@ -23,6 +27,13 @@
   @include desktopSmall
     height: 85px
     padding-left: 0
+  @include tablet
+    padding-left: 20px
+  @include tabletSmall
+    display: flex
+    flex-wrap: wrap
+    height: auto
+    justify-content: space-between
 
 .foot-content__logo
   display: block
@@ -30,11 +41,23 @@
   img
     @include desktopSmall
       height: 44px
+    @include tabletSmall
+      height: 56px
+  @include tabletSmall
+    width: 100%
+    text-align: center
 
 .foot-content__block
   display: flex
   flex-direction: column
   justify-content: space-between
+  @include tabletSmall
+    width: 143px
+    margin-top: 25px
+    min-height: 124px
+    &:nth-child(4)
+      width: 220px
+      min-height: 90px
 
 .foot-content__item
   @include fontFSC($goth-m, 14px, $clr)
@@ -43,6 +66,8 @@
   @include desktopSmall
     font-size: 12px
     line-height: 11px
+  @include tabletSmall
+    line-height: 20px
 
 .foot-content__item_no-upper
   text-transform: none
@@ -57,11 +82,17 @@
     margin-top: 37px
 
 .basement
+  @include tabletSmall
+    display: flex
+    flex-wrap: wrap
 
 .basement__payments
   width: 208px
   @include desktopSmall
     width: 140px
+  @include tabletSmall
+    width: 208px
+    margin: 0 auto
 
 .basement__item
   line-height: 25px
@@ -79,16 +110,43 @@
     &:nth-child(4)
       svg
         width: 35px
+  @include tabletSmall
+    line-height: 25px
+    &:nth-child(1)
+      svg
+        width: 29px
+    &:nth-child(2)
+      svg
+        width: 30px
+    &:nth-child(3)
+      svg
+        width: 45px
+    &:nth-child(4)
+      svg
+        width: 45px
 
 .basement__rights
+  br
+    display: none
   @include fontFSC($goth-r, 14px, $clr)
   line-height: 20px
   @include desktopSmall
     font-size: 12px
     line-height: 11px
+  @include tabletSmall
+    margin-top: 30px
+    width: 134px
+    line-height: 20px
+    margin-right: 265px
+    br
+      display: inline
+  @include mobile
+    margin-right: 150px
 
 .basement__by
   width: 208px
   text-align: right
   @include desktopSmall
     width: 40px
+  @include tabletSmall
+    margin-top: 36px

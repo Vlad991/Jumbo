@@ -12,19 +12,83 @@
     <header class="container__header header">
         <div class="container__fixed layout">
             <a href="/" class="header__logo"><img src="./img/header/logo.svg" alt="Logo"></a>
-            <div class="header__menu layout">
+            <nav class="header__menu layout">
                 <a href="#" class="header__menu-item header__menu-item_active">меню</a>
                 <a href="#" class="header__menu-item">кейтерінг</a>
                 <a href="#" class="header__menu-item">Ресторани</a>
                 <a href="#" class="header__menu-item">Чому ми?</a>
                 <a href="#" class="header__menu-item">доставка та оплата</a>
                 <a href="#" class="header__menu-item">контакти</a>
-            </div>
+                <a href="#" class="header__menu-item header__mobile-item">068 121 21 22</a>
+                <a href="#" class="header__menu-item header__mobile-item">068 121 21 22</a>
+                <div class="header__menu-item header__menu-mobile-socials">
+                    <a href="#" class="link header__menu-mobile-soc">
+                        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.8331 0H10.167C4.56087 0 0 4.56087 0 10.167V24.833C0 30.4391 4.56087 35 10.167 35H24.833C30.4391 35 35 30.4391 35 24.8331V10.167C35 4.56087 30.4391 0 24.8331 0ZM32.2656 24.833C32.2656 28.9314 28.9314 32.2656 24.8331 32.2656H10.167C6.0686 32.2656 2.73438 28.9314 2.73438 24.8331V10.167C2.73438 6.0686 6.0686 2.73438 10.167 2.73438H24.833C28.9314 2.73438 32.2656 6.0686 32.2656 10.167V24.833Z" fill="white"/>
+                            <path d="M17.5 8.06641C12.2983 8.06641 8.06641 12.2983 8.06641 17.5C8.06641 22.7017 12.2983 26.9336 17.5 26.9336C22.7017 26.9336 26.9336 22.7017 26.9336 17.5C26.9336 12.2983 22.7017 8.06641 17.5 8.06641ZM17.5 24.1992C13.8061 24.1992 10.8008 21.1939 10.8008 17.5C10.8008 13.8061 13.8061 10.8008 17.5 10.8008C21.1939 10.8008 24.1992 13.8061 24.1992 17.5C24.1992 21.1939 21.1939 24.1992 17.5 24.1992Z" fill="white"/>
+                            <path d="M27.0703 9.29688C27.8254 9.29688 28.4375 8.68476 28.4375 7.92969C28.4375 7.17461 27.8254 6.5625 27.0703 6.5625C26.3152 6.5625 25.7031 7.17461 25.7031 7.92969C25.7031 8.68476 26.3152 9.29688 27.0703 9.29688Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="link header__menu-mobile-soc">
+                        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.12695 35H16.543V22.5586H12.4414V18.457H16.543V13.3301C16.543 10.503 18.8429 8.20312 21.6699 8.20312H26.7969V12.3047H22.6953C21.5644 12.3047 20.6445 13.2246 20.6445 14.3555V18.457H26.6118L25.9282 22.5586H20.6445V35H29.873C32.7001 35 35 32.7001 35 29.873V5.12695C35 2.29992 32.7001 0 29.873 0H5.12695C2.29992 0 0 2.29992 0 5.12695V29.873C0 32.7001 2.29992 35 5.12695 35ZM2.05078 5.12695C2.05078 3.43079 3.43079 2.05078 5.12695 2.05078H29.873C31.5692 2.05078 32.9492 3.43079 32.9492 5.12695V29.873C32.9492 31.5692 31.5692 32.9492 29.873 32.9492H22.6953V24.6094H27.6655L29.0327 16.4062H22.6953V14.3555H28.8477V6.15234H21.6699C17.712 6.15234 14.4922 9.37218 14.4922 13.3301V16.4062H10.3906V24.6094H14.4922V32.9492H5.12695C3.43079 32.9492 2.05078 31.5692 2.05078 29.873V5.12695Z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
             <div class="header__small-items layout">
-                <a href="tel:0681212122" class="link header__small-item header__arrow-after">068 121 21 22</a>
-                <a href="#" class="link header__small-item"><img src="./img/header/account.svg" alt="Account" class="small-item__img"></a>
-                <a href="#" class="link header__small-item header__small-item_cage small-item__cage"><img src="./img/header/cage.svg" alt="Cage" class="small-item__img"></a>
-                <a href="#" class="link header__small-item header__arrow-after">RU</a>
+                <div class="link header__small-item header-drop">
+                    <div class="link header-drop__text">068 121 21 22</div>
+                    <svg class="header-drop__arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.90008 0.685243L9.39911 0.184311C9.33236 0.117418 9.25546 0.0840759 9.16853 0.0840759C9.08181 0.0840759 9.00494 0.117418 8.93819 0.184311L5.00005 4.12224L1.06209 0.184417C0.995301 0.117523 0.918439 0.0841812 0.831611 0.0841812C0.744747 0.0841812 0.667886 0.117523 0.601132 0.184417L0.100235 0.685384C0.0333416 0.752137 0 0.828998 0 0.915862C0 1.00266 0.0334469 1.07952 0.100235 1.14627L4.76957 5.81571C4.83633 5.8825 4.91322 5.91588 5.00005 5.91588C5.08688 5.91588 5.16364 5.8825 5.23036 5.81571L9.90008 1.14627C9.96683 1.07948 10 1.00262 10 0.915862C10 0.828998 9.96683 0.752137 9.90008 0.685243Z" fill="#E5E5E5"/>
+                    </svg>
+                    <ul class="header-drop__col-list">
+                        <li class="header-drop__col-item">
+                            <div class="header-drop__col-item-text">068 121 21 22</div>
+                        </li>
+                        <li class="header-drop__col-item">
+                            <div class="header-drop__col-item-text">068 121 21 22</div>
+                        </li>
+                        <li class="header-drop__col-item">
+                            <div class="header-drop__col-item-text">068 121 21 22</div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="link header__small-item">
+                    <svg class="small-item__img" width="25" height="25" viewBox="0 0 417 418" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M211.9 1.00004C94.9198 -0.57996 -0.580204 94.92 0.999796 211.9C2.5598 324.09 93.9098 415.44 206.1 417C323.1 418.6 418.58 323.1 416.98 206.12C415.44 93.91 324.09 2.56004 211.9 1.00004ZM338.32 328.25C337.921 328.681 337.433 329.019 336.89 329.24C336.346 329.461 335.761 329.559 335.175 329.529C334.589 329.498 334.017 329.339 333.499 329.063C332.982 328.787 332.531 328.4 332.18 327.93C323.235 316.227 312.281 306.208 299.83 298.34C274.37 282 242.11 273 209 273C175.89 273 143.63 282 118.17 298.34C105.719 306.205 94.7647 316.221 85.8198 327.92C85.4684 328.39 85.0179 328.777 84.5003 329.053C83.9827 329.329 83.4107 329.488 82.8248 329.519C82.2388 329.549 81.6534 329.451 81.1099 329.23C80.5664 329.009 80.0781 328.671 79.6798 328.24C50.3365 296.564 33.7147 255.173 32.9998 212C31.3698 114.69 111.22 33.24 208.57 33C305.92 32.76 385 111.81 385 209C385.033 253.214 368.36 295.808 338.32 328.25Z" fill="white"/>
+                        <path d="M209 97C189.28 97 171.45 104.39 158.78 117.82C146.11 131.25 139.78 149.82 141.21 169.75C144.11 209 174.52 241 209 241C243.48 241 273.83 209 276.79 169.76C278.27 150.02 271.99 131.62 259.11 117.94C246.39 104.44 228.59 97 209 97Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="#" class="link header__small-item header__small-item_cage small-item__cage">
+                    <svg class="small-item__img" width="25" height="25" viewBox="0 0 512 448" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M512 160H425.059L333.719 7.76598C329.189 0.203823 319.36 -2.26519 311.767 2.2818C304.188 6.82879 301.735 16.6564 306.282 24.2347L387.741 160H124.26L205.719 24.2336C210.266 16.6553 207.813 6.82771 200.234 2.28072C192.625 -2.26627 182.829 0.202746 178.282 7.7649L86.9422 159.999H0V191.999H34.7267L75.3749 408.827C79.6245 431.531 99.4682 448 122.563 448H389.438C412.532 448 432.375 431.531 436.61 408.844L477.272 191.999H512.001C512 191.999 512 160 512 160ZM405.156 402.953C403.75 410.515 397.14 416.001 389.437 416.001H122.563C114.86 416.001 108.251 410.517 106.829 402.938L67.2741 191.999H444.727L405.156 402.953Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="#" class="link header__small-item header__menu-button">
+                    <div class="menu-button">
+                        <span class="menu-button__line"></span>
+                        <span class="menu-button__line"></span>
+                        <span class="menu-button__line"></span>
+                    </div>
+                </a>
+                <div class="link header__small-item header-drop header-drop_lang">
+                    <div class="link header-drop__text">RU</div>
+                    <svg class="header-drop__arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.90008 0.685243L9.39911 0.184311C9.33236 0.117418 9.25546 0.0840759 9.16853 0.0840759C9.08181 0.0840759 9.00494 0.117418 8.93819 0.184311L5.00005 4.12224L1.06209 0.184417C0.995301 0.117523 0.918439 0.0841812 0.831611 0.0841812C0.744747 0.0841812 0.667886 0.117523 0.601132 0.184417L0.100235 0.685384C0.0333416 0.752137 0 0.828998 0 0.915862C0 1.00266 0.0334469 1.07952 0.100235 1.14627L4.76957 5.81571C4.83633 5.8825 4.91322 5.91588 5.00005 5.91588C5.08688 5.91588 5.16364 5.8825 5.23036 5.81571L9.90008 1.14627C9.96683 1.07948 10 1.00262 10 0.915862C10 0.828998 9.96683 0.752137 9.90008 0.685243Z" fill="#E5E5E5"/>
+                    </svg>
+                    <ul class="header-drop__col-list">
+                        <li class="header-drop__col-item">
+                            <div class="header-drop__col-item-text">RU</div>
+                        </li>
+                        <li class="header-drop__col-item">
+                            <div class="header-drop__col-item-text">UKR</div>
+                        </li>
+                        <li class="header-drop__col-item">
+                            <div class="header-drop__col-item-text">EN</div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -155,8 +219,18 @@
                 <a href="#" class="link foot-content__item">контакти</a>
             </div>
             <div class="foot-content__block">
-                <a href="tel:0443339012" class="link foot-content__item foot-content__item_no-upper"><img src="./img/footer/phone.svg" alt="Phone" class="foot-content__img">044 333-90-12</a>
-                <a href="#" class="link foot-content__item foot-content__item_no-upper"><img src="./img/footer/address.svg" alt="Address" class="foot-content__img">Голосеевский проcп., 87б</a>
+                <a href="tel:0443339012" class="link foot-content__item foot-content__item_no-upper">
+                    <svg class="foot-content__img" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.6637 11.8545L12.3472 9.5377C11.8858 9.07815 11.1217 9.09211 10.6442 9.56976L9.47714 10.7366C9.40341 10.6959 9.32709 10.6535 9.24685 10.6085C8.50986 10.2001 7.50116 9.64039 6.43971 8.57817C5.37512 7.51371 4.8149 6.50346 4.40529 5.76599C4.36207 5.68786 4.32065 5.61253 4.27976 5.541L5.06303 4.75888L5.44812 4.37332C5.92633 3.89498 5.93952 3.1311 5.47919 2.67021L3.16268 0.353179C2.70235 -0.107064 1.93791 -0.0931016 1.45969 0.385241L0.806819 1.04186L0.82466 1.05957C0.605743 1.33891 0.422809 1.66108 0.286676 2.0085C0.161186 2.33921 0.083057 2.65478 0.0473321 2.971C-0.258548 5.50682 0.900247 7.82437 4.04507 10.9692C8.39217 15.316 11.8954 14.9877 12.0465 14.9716C12.3756 14.9323 12.6911 14.8536 13.0117 14.7291C13.3561 14.5946 13.678 14.4119 13.9572 14.1935L13.9714 14.2061L14.6329 13.5585C15.1101 13.0802 15.1238 12.3161 14.6637 11.8545Z" fill="#E5E5E5"/>
+                    </svg>
+                    044 333-90-12
+                </a>
+                <a href="#" class="link foot-content__item foot-content__item_no-upper">
+                    <svg class="foot-content__img" width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.50079 0C2.50533 0 0.0683594 2.43697 0.0683594 5.4324C0.0683594 9.14983 4.92985 14.6072 5.13684 14.8377C5.33125 15.0543 5.67068 15.0539 5.86475 14.8377C6.07173 14.6072 10.9332 9.14983 10.9332 5.4324C10.9332 2.43697 8.49622 0 5.50079 0ZM5.50079 8.1656C3.9937 8.1656 2.76763 6.93949 2.76763 5.4324C2.76763 3.92531 3.99373 2.69924 5.50079 2.69924C7.00785 2.69924 8.23393 3.92534 8.23393 5.43243C8.23393 6.93952 7.00785 8.1656 5.50079 8.1656Z" fill="#E5E5E5"/>
+                    </svg>
+                    Голосеевский проcп., 87б
+                </a>
                 <a href="mailto:hello@jumbogrill.ua" class="link foot-content__item foot-content__item_no-upper">
                     <svg class="foot-content__img" width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 10.1548V0.844238L9.82812 5.49952L15 10.1548Z" fill="#E5E5E5"/>
@@ -164,7 +238,8 @@
                         <path d="M14.1487 0.078125H0.851562L7.50013 6.06252L14.1487 0.078125Z" fill="#E5E5E5"/>
                         <path d="M0 0.844238V10.1548L5.17192 5.49952L0 0.844238Z" fill="#E5E5E5"/>
                     </svg>
-                    hello@jumbogrill.ua</a>
+                    hello@jumbogrill.ua
+                </a>
             </div>
         </div>
         <div class="container__fixed footer__basement layout basement">
@@ -214,7 +289,7 @@
                     </svg>
                 </div>
             </div>
-            <div class="basement__rights">JumboGrill 2019. All rights reserved</div>
+            <div class="basement__rights">JumboGrill 2019.<br> All rights reserved</div>
             <div class="basement__by">
                 <svg width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21.1926 15.9429L46.9001 0.21435C47.5817 -0.192793 48.4549 0.0214931 48.8596 0.685779C49.0087 0.921493 49.0726 1.17864 49.0726 1.43578V1.52149V14.9358C49.0726 15.9215 48.2845 16.7144 47.3048 16.7144C47.0279 16.7144 46.7723 16.6501 46.538 16.5429L46.4102 16.4786L40.0632 13.4358L42.9386 12.6429L37.0601 22.7786C36.3999 23.8929 34.9728 24.2786 33.8653 23.6358C33.5458 23.4429 33.2902 23.2072 33.0986 22.9286L32.9921 22.7572L21.6186 5.72149C20.4897 4.05006 20.937 1.77864 22.5983 0.642922C24.2596 -0.492793 26.5386 -0.0427927 27.6461 1.62864C27.7313 1.75721 27.8165 1.88578 27.8804 2.01435L37.0814 20.3572L33.0134 20.3358L39.2326 10.4144L39.3178 10.2858C39.9141 9.32149 41.1708 9.04292 42.1292 9.62149L48.1354 13.3072L45.4731 14.8501L46.176 1.45721L48.3484 2.76435L21.6186 16.6715C21.4056 16.7786 21.15 16.6929 21.0435 16.4786C20.937 16.2858 21.0009 16.0501 21.1926 15.9429Z" fill="white"/>

@@ -11,12 +11,17 @@
     margin-top: 25px
 
 .statistics
+  @include tabletSmall
+    flex-wrap: wrap
+    justify-content: space-between
 
 .statistics__item
   display: flex
   flex-direction: column
   &:last-child
     width: 135px
+  @include tabletSmall
+    margin-bottom: 30px
 
 .statistics__value
   @include fontFSC($goth-m, 96px)
@@ -41,6 +46,8 @@
     font-size: 18px
     line-height: 20px
     width: 137px
+  @include tabletSmall
+    width: 142px
 
 .cool__snake
   background-image: url("../../img/main-page/cool/bg.png")
@@ -50,6 +57,9 @@
     background-image: url("../../img/main-page/cool/bg2.png")
     background-size: auto
     background-position: 50% 100%
+  @include tabletSmall
+    background-position: 50% -60px
+    background-size: 146%
 
 .snake
   display: flex
@@ -61,6 +71,9 @@
   @include desktopSmall
     padding: 115px 0 102px 63px
     min-height: 1560px
+  @include tabletSmall
+    padding: 24px 0 102px 0
+    min-height: 1277px
 
 .snake__img
 
@@ -70,6 +83,8 @@
     align-self: flex-end
   @include desktopSmall
     width: 349px
+  @include tabletSmall
+    width: 212px
 
 .snake__heading
   @include fontFSC($goth-r, 30px)
@@ -77,6 +92,10 @@
   @include desktopSmall
     font-size: 24px
     line-height: 30px
+    width: auto
+  @include tabletSmall
+    font-size: 18px
+    line-height: 22px
 
 .snake__description
   @include fontFSC($goth-m, 16px, $clr)
@@ -85,3 +104,8 @@
   width: 355px
   @include desktopSmall
     margin-top: 16px
+  @include tabletSmall
+    font-size: 14px
+    line-height: 20px
+    margin-top: 10px
+    width: 100%

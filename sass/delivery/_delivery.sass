@@ -13,6 +13,9 @@
   background-position: 100% -22px
   @include desktopBig
     background-position: 80% -22px
+  @include tabletSmall
+    background-position: 120% 150px
+    background-size: 100%
 
 .del-info__text
   @include fontFSC($goth-r, 14px)
@@ -24,11 +27,15 @@
 
 .del-info__text_2
   margin-top: 35px
+  @include tabletSmall
+    width: 100%
 
 .del-info__text_bold
   @include fontFSC($goth-b, 14px)
   @include desktopSmall
     width: 50%
+  @include tabletSmall
+    width: 100%
 
 .del-info__ways
   display: flex
@@ -45,6 +52,8 @@
     justify-content: space-between
     width: 50%
     height: auto
+  @include tabletSmall
+    width: 100%
 
 .del-info__button
   margin-top: 35px
@@ -66,6 +75,8 @@
   text-align: center
   margin: 53px auto 0
   width: 458px
+  @include tabletSmall
+    width: 100%
 
 .yourself__text
   @include fontFSC($goth-r, 24px)
@@ -78,6 +89,8 @@
     font-size: 18px
     line-height: 25px
     width: 453px
+  @include tabletSmall
+    width: 100%
 
 .yourself__text_red
   @include fontFSC($goth-m, 35px, #E34035)
@@ -141,6 +154,8 @@
       margin-left: 0
     &::before
       width: 40px
+  @include tabletSmall
+    margin-left: 0
 
 .delivery__payment
   margin-top: 60px
@@ -163,6 +178,8 @@
   width: 580px
   @include desktopSmall
     margin-top: 30px
+  @include tabletSmall
+    width: 100%
 
 .payment__way
   width: 255px

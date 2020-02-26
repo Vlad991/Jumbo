@@ -6,11 +6,17 @@
 .header
   padding: 25px 0
   background-color: $bg-clr
+  @include tabletSmall
+    height: 92px
+    box-sizing: border-box
 
 .header_transparent
   background-color: transparent
 
 .header__logo
+  @include tabletSmall
+    img
+      width: 92px
 
 .header__menu
   @include desktopSmall
@@ -97,6 +103,9 @@
     display: block
     div
       margin-top: 16px
+  @include tabletSmall
+    div
+      margin-top: 10px
 
 .header__arrow-after
   display: inline-block
@@ -123,6 +132,9 @@
     top: 20px
     right: 12px
     z-index: 1
+  &::after
+    top: 13px
+    right: 9px
 
 .header-drop
   display: flex

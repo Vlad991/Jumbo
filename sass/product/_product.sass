@@ -7,6 +7,8 @@
 .product
   display: flex
   justify-content: space-between
+  @include tabletSmall
+    flex-direction: column
 
 .product__img
   width: 555px
@@ -127,5 +129,11 @@
 .recommended__products
   width: 100%
   padding: 0 33px
+  @include tablet
+    padding: 0
+    display: flex
+    justify-content: space-between
+  @include tabletSmall
+    flex-direction: column
 
 .recommended__product
