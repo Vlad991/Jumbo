@@ -6,6 +6,9 @@
 .menu
 
 .menu__header
+  @include mobile
+    flex-direction: column
+    justify-content: flex-start
 
 .menu__location
 
@@ -15,6 +18,11 @@
     justify-content: space-between
     min-height: 76px
     width: 223px
+  @include mobile
+    margin-top: 25px
+    width: 100%
+    justify-content: flex-start
+    min-height: 0
 
 .menu__ways-list
   display: flex
@@ -43,9 +51,28 @@
       &:nth-child(4)
         width: 103px
         margin-left: 15px
+  @include mobile
+    margin-top: 10px
+    svg
+      margin-left: 0
+      margin-bottom: 17px
+      &:nth-child(1)
+        width: 93px
+      &:nth-child(2)
+        width: 61px
+        margin-left: 40px
+        margin-right: 50px
+      &:nth-child(3)
+        width: 89px
+        margin-right: 30px
+      &:nth-child(4)
+        width: 103px
+        margin-left: 15px
 
 .menu__delivery-text
   @include fontFSC($goth-m, 16px)
+  @include mobile
+    text-align: center
 
 .menu__body
   margin-top: 32px
@@ -54,6 +81,11 @@
   @include desktopSmall
     position: relative
     margin-top: 8px
+  @include mobile
+    margin-top: 25px
+    display: flex
+    flex-direction: column
+    position: static
 
 .menu__drop-down
   display: none
@@ -62,6 +94,10 @@
     position: absolute
     top: -42px
     left: 0
+  @include mobile
+    position: static
+    width: 160px
+    margin: 0 auto
 
 .menu__drop-text
   @include fontFSC($goth-b, 16px)
@@ -75,8 +111,14 @@
   @include desktopSmall
     position: absolute
     display: none
+  @include mobile
+    top: 0
+    left: 0
+    z-index: 100
 
 .menu__products
+  @include mobile
+    margin-top: 25px
 
 .products
   padding: 0 0 0 30px

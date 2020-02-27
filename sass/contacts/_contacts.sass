@@ -45,6 +45,11 @@
     margin-top: 0
   @include desktopSmall
     max-width: 230px
+  @include tabletSmall
+    max-width: 100%
+    margin-top: 20px
+    &:nth-child(3n+1)
+      margin-top: 20px
 
 .cont-info__name
   @include fontFSC($goth-m, 16px)
@@ -91,3 +96,5 @@
   @include desktopSmall
     width: 100%
     margin-bottom: 50px
+  @include tabletSmall
+    height: 418px

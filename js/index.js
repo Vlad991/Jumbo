@@ -52,4 +52,93 @@ $(function () {
         $tab.show();
     });
 
+    $('.recommended__products').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    $('.product-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    $('body').click(function () {
+        $('.side-nav').hide();
+    });
+
+    $('.side-nav').click(function (event) {
+        event.stopPropagation();
+    });
+
+    $('.menu__drop-down').click(function (event) {
+        event.stopPropagation();
+        $('.side-nav').toggle();
+    });
+
+    $('.side-nav__item').click(function () {
+        let isActive = $(this).hasClass('side-nav__item_active');
+        $('.side-nav__item').removeClass('side-nav__item_active');
+        if (!isActive) {
+            $(this).addClass('side-nav__item_active', {duration:500});
+        }
+    });
+
 });

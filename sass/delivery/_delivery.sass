@@ -24,6 +24,8 @@
   @include desktopSmall
     line-height: 20px
     width: 50%
+  @include mobile
+    width: 100%
 
 .del-info__text_2
   margin-top: 35px
@@ -70,6 +72,8 @@
   padding: 0.01%
   @include desktopSmall
     height: 217px
+  @include mobile
+    height: 217px
 
 .yourself__heading
   text-align: center
@@ -77,6 +81,11 @@
   width: 458px
   @include tabletSmall
     width: 100%
+  @include mobile
+    margin-top: 40px
+    font-size: 20px
+    line-height: 25px
+    width: 274px
 
 .yourself__text
   @include fontFSC($goth-r, 24px)
@@ -91,6 +100,10 @@
     width: 453px
   @include tabletSmall
     width: 100%
+  @include mobile
+    font-size: 18px
+    line-height: 25px
+    margin-top: 10px
 
 .yourself__text_red
   @include fontFSC($goth-m, 35px, #E34035)
@@ -107,6 +120,8 @@
 .zone__heading
   margin-top: 50px
   text-align: center
+  @include tabletSmall
+    margin-top: 25px
 
 .zone__z-map
   margin-top: 36px
@@ -166,6 +181,9 @@
   height: 327px
   @include desktopSmall
     height: 225px
+  @include mobile
+    height: auto
+    padding-bottom: 25px
 
 .payment__heading
   text-align: center
@@ -180,9 +198,14 @@
     margin-top: 30px
   @include tabletSmall
     width: 100%
+  @include mobile
+    flex-direction: column
+    margin-top: 0
 
 .payment__way
   width: 255px
+  @include mobile
+    margin: 30px auto 0
 
 .payment__w-img
   display: block

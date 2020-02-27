@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>Jumbo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
     <link rel="stylesheet" href="./css/main.css">
     <script src="js/jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
     <script src="js/index.js"></script>
 </head>
 <body>
@@ -24,12 +26,12 @@
                 </svg>
             </a>
             <nav class="header__menu layout">
-                <a href="#" class="header__menu-item header__menu-item_active">меню</a>
-                <a href="#" class="header__menu-item">кейтерінг</a>
-                <a href="#" class="header__menu-item">Ресторани</a>
-                <a href="#" class="header__menu-item">Чому ми?</a>
-                <a href="#" class="header__menu-item">доставка та оплата</a>
-                <a href="#" class="header__menu-item">контакти</a>
+                <a href="/menu.html" class="header__menu-item header__menu-item_active">меню</a>
+                <a href="/" class="header__menu-item">кейтерінг</a>
+                <a href="/product.html" class="header__menu-item">Ресторани</a>
+                <a href="/checkout.html" class="header__menu-item">Чому ми?</a>
+                <a href="/delivery.html" class="header__menu-item">доставка та оплата</a>
+                <a href="/contacts.html" class="header__menu-item">контакти</a>
                 <a href="#" class="header__menu-item header__mobile-item">068 121 21 22</a>
                 <a href="#" class="header__menu-item header__mobile-item">068 121 21 22</a>
                 <div class="header__menu-item header__menu-mobile-socials">
@@ -111,7 +113,7 @@
                 <h2 class="main-heading__second">Jumbo Grill</h2>
             </div>
             <div class="main-slider__wrapper">
-                <button class="main-slider__button button">меню доставки</button>
+                <button class="main-slider__button button"><span class="button__inner">меню доставки</span></button>
                 <div class="dots__wrapper">
                     <div class="main-slider__socials">
                         <a href="#" class="main-slider__socials-item">
@@ -211,28 +213,28 @@
                     <div class="action-block__description">
                         Замовлення до 1000 грн. <img src="img/main-page/cool-all/delivery.svg" alt="Glovo"><br> Фірмова доставка від 1000 грн (20 км по києву безкоштовно)
                     </div>
-                    <div class="action-block__button button">замовити</div>
+                    <div class="action-block__button button"><span class="button__inner">замовити</span></div>
                 </div>
             </div>
             <div class="cool-all__action-block">
                 <div class="action-block">
                     <div class="action-block__heading">Самовивіз</div>
                     <div class="action-block__description">Забери своє замовлення сам і отримай знижку 20 %</div>
-                    <div class="action-block__button button">доставка</div>
+                    <div class="action-block__button button"><span class="button__inner">доставка</span></div>
                 </div>
             </div>
             <div class="cool-all__action-block">
                 <div class="action-block">
                     <div class="action-block__heading">Ресторан</div>
                     <div class="action-block__description">Спробуй смачне сет-меню в ресторані «Двір Голосіївський»</div>
-                    <div class="action-block__button button">відвідати</div>
+                    <div class="action-block__button button"><span class="button__inner">відвідати</span></div>
                 </div>
             </div>
             <div class="cool-all__action-block">
                 <div class="action-block">
                     <div class="action-block__heading">Жаримо у вас</div>
                     <div class="action-block__description">Ексклюзивний майстер-клас від нашого шеф-кухаря у подарунок</div>
-                    <div class="action-block__button button">замовити</div>
+                    <div class="action-block__button button"><span class="button__inner">замовити</span></div>
                 </div>
             </div>
         </div>
@@ -241,113 +243,121 @@
     <section class="container__hits hits">
         <h3 class="container__heading">Хіти продажу</h3>
         <div class="hits__product-slider container__fixed layout product-slider">
-            <img src="./img/main/arrow_l.svg" alt="Arrow" class="product-slider__arrow">
-            <div class="product-slider__card-trans card-trans">
-                <div class="card-trans__heading"> бокс телятина</div>
-                <img src="img/main-page/hits/product1.svg" alt="Product" class="card-trans__img">
-                <div class="card-trans__price-weight layout">
-                    <div class="card-trans__weight">329 грн / 1 шт</div>
-                    <div class="card-trans__weight">700 гр</div>
-                </div>
-                <div class="card-trans__price-qnt layout">
-                    <div class="card-trans__quantity layout">
-                        <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM6 10V12H16V10H6Z" fill="#E5E5E5"/>
-                        </svg>
-                        <div class="card-trans__price">1</div>
-                        <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM16 10H12V6H10V10H6V12H10V16H12V12H16V10Z" fill="#E5E5E5"/>
-                        </svg>
+            <div class="product-slider__card-trans">
+                <div class="card-trans">
+                    <div class="card-trans__heading"> бокс телятина</div>
+                    <img src="img/main-page/hits/product1.svg" alt="Product" class="card-trans__img">
+                    <div class="card-trans__price-weight layout">
+                        <div class="card-trans__weight">329 грн / 1 шт</div>
+                        <div class="card-trans__weight">700 гр</div>
                     </div>
-                    <div class="card-trans__price">329 грн</div>
-                </div>
-                <button class="card-trans__button button">хочу</button>
-            </div>
-            <div class="product-slider__card-trans card-trans">
-                <div class="card-trans__heading"> бокс телятина</div>
-                <img src="img/main-page/hits/product1.svg" alt="Product" class="card-trans__img">
-                <div class="card-trans__price-weight layout">
-                    <div class="card-trans__weight">329 грн / 1 шт</div>
-                    <div class="card-trans__weight">700 гр</div>
-                </div>
-                <div class="card-trans__price-qnt layout">
-                    <div class="card-trans__quantity layout">
-                        <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM6 10V12H16V10H6Z" fill="#E5E5E5"/>
-                        </svg>
-                        <div class="card-trans__price">1</div>
-                        <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM16 10H12V6H10V10H6V12H10V16H12V12H16V10Z" fill="#E5E5E5"/>
-                        </svg>
+                    <div class="card-trans__price-qnt layout">
+                        <div class="card-trans__quantity layout">
+                            <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM6 10V12H16V10H6Z" fill="#E5E5E5"/>
+                            </svg>
+                            <div class="card-trans__price">1</div>
+                            <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM16 10H12V6H10V10H6V12H10V16H12V12H16V10Z" fill="#E5E5E5"/>
+                            </svg>
+                        </div>
+                        <div class="card-trans__price">329 грн</div>
                     </div>
-                    <div class="card-trans__price">329 грн</div>
+                    <button class="card-trans__button button"><span class="button__inner">хочу</span></button>
                 </div>
-                <button class="card-trans__button button">хочу</button>
             </div>
-            <div class="product-slider__card-trans card-trans">
-                <div class="card-trans__heading"> бокс телятина</div>
-                <img src="img/main-page/hits/product1.svg" alt="Product" class="card-trans__img">
-                <div class="card-trans__price-weight layout">
-                    <div class="card-trans__weight">329 грн / 1 шт</div>
-                    <div class="card-trans__weight">700 гр</div>
-                </div>
-                <div class="card-trans__price-qnt layout">
-                    <div class="card-trans__quantity layout">
-                        <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM6 10V12H16V10H6Z" fill="#E5E5E5"/>
-                        </svg>
-                        <div class="card-trans__price">1</div>
-                        <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM16 10H12V6H10V10H6V12H10V16H12V12H16V10Z" fill="#E5E5E5"/>
-                        </svg>
+            <div class="product-slider__card-trans">
+                <div class="card-trans">
+                    <div class="card-trans__heading"> бокс телятина</div>
+                    <img src="img/main-page/hits/product1.svg" alt="Product" class="card-trans__img">
+                    <div class="card-trans__price-weight layout">
+                        <div class="card-trans__weight">329 грн / 1 шт</div>
+                        <div class="card-trans__weight">700 гр</div>
                     </div>
-                    <div class="card-trans__price">329 грн</div>
-                </div>
-                <button class="card-trans__button button">хочу</button>
-            </div>
-            <div class="product-slider__card-trans card-trans">
-                <div class="card-trans__heading"> бокс телятина</div>
-                <img src="img/main-page/hits/product1.svg" alt="Product" class="card-trans__img">
-                <div class="card-trans__price-weight layout">
-                    <div class="card-trans__weight">329 грн / 1 шт</div>
-                    <div class="card-trans__weight">700 гр</div>
-                </div>
-                <div class="card-trans__price-qnt layout">
-                    <div class="card-trans__quantity layout">
-                        <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM6 10V12H16V10H6Z" fill="#E5E5E5"/>
-                        </svg>
-                        <div class="card-trans__price">1</div>
-                        <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM16 10H12V6H10V10H6V12H10V16H12V12H16V10Z" fill="#E5E5E5"/>
-                        </svg>
+                    <div class="card-trans__price-qnt layout">
+                        <div class="card-trans__quantity layout">
+                            <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM6 10V12H16V10H6Z" fill="#E5E5E5"/>
+                            </svg>
+                            <div class="card-trans__price">1</div>
+                            <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM16 10H12V6H10V10H6V12H10V16H12V12H16V10Z" fill="#E5E5E5"/>
+                            </svg>
+                        </div>
+                        <div class="card-trans__price">329 грн</div>
                     </div>
-                    <div class="card-trans__price">329 грн</div>
+                    <button class="card-trans__button button"><span class="button__inner">хочу</span></button>
                 </div>
-                <button class="card-trans__button button">хочу</button>
             </div>
-            <div class="product-slider__card-trans card-trans">
-                <div class="card-trans__heading"> бокс телятина</div>
-                <img src="img/main-page/hits/product1.svg" alt="Product" class="card-trans__img">
-                <div class="card-trans__price-weight layout">
-                    <div class="card-trans__weight">329 грн / 1 шт</div>
-                    <div class="card-trans__weight">700 гр</div>
-                </div>
-                <div class="card-trans__price-qnt layout">
-                    <div class="card-trans__quantity layout">
-                        <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM6 10V12H16V10H6Z" fill="#E5E5E5"/>
-                        </svg>
-                        <div class="card-trans__price">1</div>
-                        <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM16 10H12V6H10V10H6V12H10V16H12V12H16V10Z" fill="#E5E5E5"/>
-                        </svg>
+            <div class="product-slider__card-trans">
+                <div class="card-trans">
+                    <div class="card-trans__heading"> бокс телятина</div>
+                    <img src="img/main-page/hits/product1.svg" alt="Product" class="card-trans__img">
+                    <div class="card-trans__price-weight layout">
+                        <div class="card-trans__weight">329 грн / 1 шт</div>
+                        <div class="card-trans__weight">700 гр</div>
                     </div>
-                    <div class="card-trans__price">329 грн</div>
+                    <div class="card-trans__price-qnt layout">
+                        <div class="card-trans__quantity layout">
+                            <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM6 10V12H16V10H6Z" fill="#E5E5E5"/>
+                            </svg>
+                            <div class="card-trans__price">1</div>
+                            <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM16 10H12V6H10V10H6V12H10V16H12V12H16V10Z" fill="#E5E5E5"/>
+                            </svg>
+                        </div>
+                        <div class="card-trans__price">329 грн</div>
+                    </div>
+                    <button class="card-trans__button button"><span class="button__inner">хочу</span></button>
                 </div>
-                <button class="card-trans__button button">хочу</button>
             </div>
-            <img src="./img/main/arrow_r.svg" alt="Arrow" class="product-slider__arrow">
+            <div class="product-slider__card-trans">
+                <div class="card-trans">
+                    <div class="card-trans__heading"> бокс телятина</div>
+                    <img src="img/main-page/hits/product1.svg" alt="Product" class="card-trans__img">
+                    <div class="card-trans__price-weight layout">
+                        <div class="card-trans__weight">329 грн / 1 шт</div>
+                        <div class="card-trans__weight">700 гр</div>
+                    </div>
+                    <div class="card-trans__price-qnt layout">
+                        <div class="card-trans__quantity layout">
+                            <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM6 10V12H16V10H6Z" fill="#E5E5E5"/>
+                            </svg>
+                            <div class="card-trans__price">1</div>
+                            <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM16 10H12V6H10V10H6V12H10V16H12V12H16V10Z" fill="#E5E5E5"/>
+                            </svg>
+                        </div>
+                        <div class="card-trans__price">329 грн</div>
+                    </div>
+                    <button class="card-trans__button button"><span class="button__inner">хочу</span></button>
+                </div>
+            </div>
+            <div class="product-slider__card-trans">
+                <div class="card-trans">
+                    <div class="card-trans__heading"> бокс телятина</div>
+                    <img src="img/main-page/hits/product1.svg" alt="Product" class="card-trans__img">
+                    <div class="card-trans__price-weight layout">
+                        <div class="card-trans__weight">329 грн / 1 шт</div>
+                        <div class="card-trans__weight">700 гр</div>
+                    </div>
+                    <div class="card-trans__price-qnt layout">
+                        <div class="card-trans__quantity layout">
+                            <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM6 10V12H16V10H6Z" fill="#E5E5E5"/>
+                            </svg>
+                            <div class="card-trans__price">1</div>
+                            <svg class="card-trans__plus" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM16 10H12V6H10V10H6V12H10V16H12V12H16V10Z" fill="#E5E5E5"/>
+                            </svg>
+                        </div>
+                        <div class="card-trans__price">329 грн</div>
+                    </div>
+                    <button class="card-trans__button button"><span class="button__inner">хочу</span></button>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -363,7 +373,7 @@
             </ol>
         </div>
         <div class="container__fixed catering__button">
-            <button type="button" class="button button_long">Замовити кейтерінг</button>
+            <button type="button" class="button button_long"><span class="button__inner">Замовити кейтерінг</span></button>
         </div>
     </section>
 
@@ -391,28 +401,28 @@
                     <div class="action-block__description">
                         Замовлення до 1000 грн. <img src="img/main-page/cool-all/delivery.svg" alt="Glovo"><br> Фірмова доставка від 1000 грн (20 км по києву безкоштовно)
                     </div>
-                    <div class="action-block__button button">замовити</div>
+                    <div class="action-block__button button"><span class="button__inner">замовити</span></div>
                 </div>
             </div>
             <div class="cool-all__action-block">
                 <div class="action-block">
                     <div class="action-block__heading">Самовивіз</div>
                     <div class="action-block__description">Забери своє замовлення сам і отримай знижку 20 %</div>
-                    <div class="action-block__button button">доставка</div>
+                    <div class="action-block__button button"><span class="button__inner">доставка</span></div>
                 </div>
             </div>
             <div class="cool-all__action-block">
                 <div class="action-block">
                     <div class="action-block__heading">Ресторан</div>
                     <div class="action-block__description">Спробуй смачне сет-меню в ресторані «Двір Голосіївський»</div>
-                    <div class="action-block__button button">відвідати</div>
+                    <div class="action-block__button button"><span class="button__inner">відвідати</span></div>
                 </div>
             </div>
             <div class="cool-all__action-block">
                 <div class="action-block">
                     <div class="action-block__heading">Жаримо у вас</div>
                     <div class="action-block__description">Ексклюзивний майстер-клас від нашого шеф-кухаря у подарунок</div>
-                    <div class="action-block__button button">замовити</div>
+                    <div class="action-block__button button"><span class="button__inner">замовити</span></div>
                 </div>
             </div>
         </div>

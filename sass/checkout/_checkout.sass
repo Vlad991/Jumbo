@@ -17,7 +17,7 @@
   display: flex
   justify-content: space-between
   flex-wrap: wrap
-  margin-top: 6px
+  margin-top: 25px
   @include tablet
     margin-top: 25px
 
@@ -69,6 +69,7 @@
     flex-wrap: wrap
     .input-check
       width: 48%
+      margin-top: 20px
 
 .checkout__heading_payment
   margin-top: 45px
@@ -132,6 +133,8 @@
 .checkout-footer__sum
   margin-top: 34px
   width: 276px
+  @include mobile
+    width: 100%
 
 .checkout-footer__sum-item
   display: flex
@@ -149,3 +152,5 @@
 
 .checkout-footer__button
   margin-top: 40px
+  @include mobile
+    width: 100%

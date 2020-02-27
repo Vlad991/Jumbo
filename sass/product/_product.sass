@@ -15,6 +15,10 @@
   @include desktopSmall
     width: 349px
     object-fit: contain
+  @include tabletSmall
+    margin: 0 auto
+  @include mobile
+    width: 100%
 
 .product__info
   width: 457px
@@ -23,6 +27,9 @@
     width: 50%
   @include desktopSmall
     width: 347px
+  @include tabletSmall
+    width: 100%
+    padding: 0
 
 .product__heading
   @include fontFSC($goth-bl, 36px)
@@ -52,6 +59,8 @@
   line-height: 20px
   @include desktopSmall
     width: 159px
+  @include tabletSmall
+    text-align: right
 
 .product__price-qnt
   margin-top: 25px
@@ -103,6 +112,10 @@
 
 .product__button
   margin-top: 45px
+  @include tabletSmall
+    margin-top: 25px
+  @include mobile
+    width: 100%
 
 .container__recommended
   margin-top: 61px
@@ -122,9 +135,13 @@
   @include desktopSmall
     font-size: 24px
     line-height: 23px
+  @include mobile
+    text-align: center
 
 .recommended__slider
   margin-top: 45px
+  @include tabletSmall
+    margin-top: 25px
 
 .recommended__products
   width: 100%
@@ -135,5 +152,9 @@
     justify-content: space-between
   @include tabletSmall
     flex-direction: column
+  .products__card
+    margin: 0
 
 .recommended__product
+  .card
+    margin: 0 auto

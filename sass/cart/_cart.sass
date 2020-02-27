@@ -30,6 +30,8 @@
   padding: 0 65px 0 220px
   @include desktopSmall
     height: 60px
+  @include tabletSmall
+    display: none
 
 .prd-list__head-item
   @include fontFSC($goth-m, 16px, $clr)
@@ -51,19 +53,52 @@
   height: 150px
   @include desktopSmall
     height: 119px
+  @include tabletSmall
+    height: 420px
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    margin: 25px auto 0
+    max-width: 269px
+    &:first-child
+      margin-top: 0
 
 .prd-list__column
   padding: 0
+  @include tabletSmall
+    order: 2
+    margin-top: 15px
+    display: flex
+    justify-content: space-between
+    &:nth-child(6)
+      order: 1
+      margin-top: 0
+    &:nth-child(3), &:nth-child(4), &:nth-child(5)
+      margin-top: 25px
+
+.prd-list__mobile-title
+  display: none
+  @include tabletSmall
+    display: block
+    @include fontFSC($goth-m, 14px, $clr)
+    line-height: 20px
 
 .prd-list__col-img
   @include desktopSmall
     height: 119px
+  @include tabletSmall
+    width: 269px
+    height: 198px
+    object-fit: cover
 
 .prd-list__col-name
   @include fontFSC($goth-m, 16px, $clr)
   line-height: 150px
   @include desktopSmall
     line-height: 119px
+  @include tabletSmall
+    line-height: 20px
+    font-size: 14px
 
 .prd-list__col-quantity
   height: 34px
@@ -72,6 +107,10 @@
   margin-top: 58px
   @include desktopSmall
     margin-top: 42px
+  @include tabletSmall
+    margin-top: 0
+    width: 92px
+    height: 30px
 
 .prd-list__plus
   @include fontFSC($goth-r, 14px)
@@ -79,16 +118,23 @@
   width: 40px
   text-align: center
   cursor: pointer
+  @include tabletSmall
+    line-height: 31px
 
 .prd-list__qnt-value
   @include fontFSC($goth-r, 14px)
   line-height: 34px
+  @include tabletSmall
+    line-height: 31px
 
 .prd-list__price
   @include fontFSC($goth-b, 24px)
   line-height: 150px
   @include desktopSmall
     line-height: 119px
+  @include tabletSmall
+    line-height: 20px
+    font-size: 14px
 
 .prd-list__cross
   width: 17px
@@ -96,6 +142,10 @@
   margin-top: 67px
   @include desktopSmall
     margin-top: 50px
+  @include tabletSmall
+    display: block
+    margin-top: 0
+    margin-left: auto
 
 .cart__cart-checkout
   flex: 1
@@ -103,6 +153,8 @@
   @include desktopSmall
     margin-top: 45px
     margin-left: 0
+  @include tabletSmall
+    margin-top: 25px
 
 .cart-checkout
 
@@ -110,10 +162,15 @@
   @include desktopSmall
     display: flex
     justify-content: space-between
+  @include tabletSmall
+    justify-content: flex-start
+    flex-direction: column
 
 .cart-checkout__first-col
   @include desktopSmall
     width: 286px
+  @include tabletSmall
+    width: 100%
 
 .cart-checkout__heading
   @include fontFSC($goth-m, 20px)
@@ -130,6 +187,8 @@
 .cart-checkout__selections
   @include desktopSmall
     width: 286px
+  @include tabletSmall
+    width: 100%
 
 .cart-checkout__delivery
   max-width: 482px
@@ -144,6 +203,11 @@
   @include desktopSmall
     width: 347px
     padding: 34px 25px
+  @include tabletSmall
+    width: 100%
+    max-width: 100%
+    padding: 34px 19px
+    height: auto
 
 .cart-checkout__delivery-text
   @include fontFSC($goth-m, 16px, #E34035)
@@ -160,6 +224,8 @@
   padding: 26px 0 0
   @include desktopSmall
     width: 286px
+  @include tabletSmall
+    width: 100%
 
 .cart-checkout__foot-sum
   display: flex
@@ -185,3 +251,7 @@
 
 .cart-checkout__button
   margin-top: 45px
+  @include tabletSmall
+    margin: 45px auto
+  @include mobile
+    width: 100%

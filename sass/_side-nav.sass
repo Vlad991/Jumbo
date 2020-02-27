@@ -9,7 +9,7 @@
   background-color: $bg-clr
   @include desktopSmall
     width: 244px
-    min-height: 955px
+    min-height: 780px
     padding: 65px 30px 47px 23px
     box-sizing: border-box
     border: 1px solid #fff
@@ -24,6 +24,8 @@
       width: 30px
       height: 21px
       display: block
+      path
+        fill: #fff
     .side-nav__item-name
       @include fontFSC($goth-b, 14px)
       line-height: 20px
@@ -35,13 +37,21 @@
       height: 20px
   .side-nav__sub-items
     display: none
+    transition: all 0.2s ease-in-out
     .side-nav__sub-item
+      cursor: pointer
+      transition: all 0.2s ease-in-out
+      &:hover
+        color: $orange
   svg
     path
       transition: all 0.2s ease-in-out
   &:hover
     .side-nav__item-name
       color: $orange
+    .side-nav__item-img
+      path
+        fill: $orange
     svg
       path
         fill: $orange
