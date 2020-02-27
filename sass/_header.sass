@@ -32,6 +32,9 @@
     flex-direction: column
     justify-content: flex-start
     padding-top: 36px
+  @include tabletSmall
+    top: 95px
+    padding-top: 18px
 
 .header__menu-item
   @include fontFSC($goth-m, 14px)
@@ -51,13 +54,19 @@
     padding-right: 0
   &:first-child
     padding-left: 0
+  @include tabletSmall
+    font-size: 18px
+    line-height: 50px
+    height: 50px
 
 .header__mobile-item
   display: none
-  @include desktopSmall
-    display: block
   &:nth-child(7)
     margin-top: 46px
+    @include tabletSmall
+      margin-top: 20px
+  @include desktopSmall
+    display: block
 
 .header__menu-mobile-socials
   display: none
@@ -66,6 +75,8 @@
     margin: 60px auto 0
     width: 120px
     justify-content: space-between
+  @include tabletSmall
+    margin-top: 45px
 
 .header__menu-item_active
   color: $orange

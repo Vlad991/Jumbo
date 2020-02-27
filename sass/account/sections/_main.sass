@@ -22,9 +22,13 @@
 .account-main__list
 
 .account-main__list-item
-  @include fontFSC($goth-r, 16px)
-  line-height: 35px
+  height: 35px
   &:first-child
     margin-top: 15px
     @include desktopSmall
       margin-top: 10px
+
+.account-main__list-link
+  display: block
+  @include fontFSC($goth-r, 16px)
+  line-height: 35px

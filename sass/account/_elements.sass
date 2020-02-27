@@ -30,6 +30,8 @@
 .input-acc
   display: flex
   margin-top: 15px
+  @include mobile
+    justify-content: space-between
 
 .input-acc__label
   @include fontFSC($goth-m, 14px)
@@ -55,6 +57,8 @@
   line-height: 20px
   &:focus
     border: 1px solid $orange
+  @include mobile
+    width: 75%
 
 .account__heading
   @include fontFSC($goth-b, 18px)
@@ -62,6 +66,8 @@
   @include desktopSmall
     font-size: 24px
     line-height: 18px
+  @include mobile
+    font-size: 18px
 
 .account__sub-heading
   @include fontFSC($goth-r, 18px)
@@ -70,6 +76,8 @@
   @include desktopSmall
     margin-top: 20px
     line-height: 17px
+  @include tabletSmall
+    font-size: 18px
 
 .hat-col
   display: flex
@@ -126,6 +134,8 @@
   margin-left: auto
   margin-bottom: 100px
   width: 80%
+  @include tabletSmall
+    width: 100%
 
 .acc-footer
   display: flex
