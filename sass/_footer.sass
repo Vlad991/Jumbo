@@ -38,7 +38,7 @@
 .foot-content__logo
   display: block
   height: 56px
-  img
+  svg
     @include desktopSmall
       height: 44px
     @include tabletSmall
@@ -91,8 +91,8 @@
   @include desktopSmall
     width: 140px
   @include tabletSmall
-    width: 208px
-    margin: 0 auto
+    width: 100%
+    justify-content: center
 
 .basement__item
   line-height: 25px
@@ -112,7 +112,9 @@
         width: 35px
   @include tabletSmall
     line-height: 25px
+    margin-left: 20px
     &:nth-child(1)
+      margin-left: 0
       svg
         width: 29px
     &:nth-child(2)
@@ -137,11 +139,11 @@
     margin-top: 30px
     width: 134px
     line-height: 20px
-    margin-right: 265px
+    //margin-right: 265px
     br
       display: inline
   @include mobile
-    margin-right: 150px
+    //margin-right: 150px
 
 .basement__by
   width: 208px
@@ -149,4 +151,5 @@
   @include desktopSmall
     width: 40px
   @include tabletSmall
+    width: 60px
     margin-top: 36px

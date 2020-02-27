@@ -7,6 +7,9 @@
   background: linear-gradient(135deg, #E68336 0%, rgba(230, 131, 54, 0) 100%)
   padding: 1px
   box-sizing: border-box
+  @include tabletSmall
+    width: 274px
+    height: 440px
 
 .card__inner
   background: $bg-clr
@@ -18,6 +21,8 @@
 .card__fixed
   max-width: 185px
   margin: 0 auto
+  @include tabletSmall
+    max-width: 230px
 
 .card__heading
   @include fontFSC($goth-m, 16px)

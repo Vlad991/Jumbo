@@ -15,8 +15,9 @@
 
 .header__logo
   @include tabletSmall
-    img
+    svg, img
       width: 92px
+      height: 42px
 
 .header__menu
   @include desktopSmall
@@ -132,9 +133,10 @@
     top: 20px
     right: 12px
     z-index: 1
-  &::after
-    top: 13px
-    right: 9px
+  @include tabletSmall
+    &::after
+      top: 13px
+      right: 9px
 
 .header-drop
   display: flex
