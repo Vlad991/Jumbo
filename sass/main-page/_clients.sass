@@ -12,13 +12,15 @@
     margin-top: 25px
 
 .clients__slider
-  width: 80%
+  width: 100%
+  .slick-arrow
+    top: 18%
 
 .clients__arrow
   cursor: pointer
 
 .clients__item
   cursor: pointer
-  @include tabletSmall
-    &:nth-child(3), &:nth-child(4)
-      display: none
+  img
+    display: block
+    margin: 0 auto

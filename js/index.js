@@ -11,7 +11,9 @@ $(function () {
         } else {
             $this.removeClass('menu-button_active');
             $menu.fadeTo(100, 0);
-            setTimeout(function () {$menu.hide()}, 100);
+            setTimeout(function () {
+                $menu.hide()
+            }, 100);
         }
     });
 
@@ -104,10 +106,44 @@ $(function () {
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    $('.clients__slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 1280,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3
+                    slidesToScroll: 3,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
                 }
             },
             {
@@ -137,7 +173,7 @@ $(function () {
         let isActive = $(this).hasClass('side-nav__item_active');
         $('.side-nav__item').removeClass('side-nav__item_active');
         if (!isActive) {
-            $(this).addClass('side-nav__item_active', {duration:500});
+            $(this).addClass('side-nav__item_active', {duration: 500});
         }
     });
 

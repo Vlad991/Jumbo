@@ -59,9 +59,9 @@
     background-position: 50% 100%
   @include tabletSmall
     background-position: 50% -60px
-    background-size: 146%
+    background-size: 710px
   @include mobile
-    background-size: 200%
+    background-size: 700px
 
 .snake
   display: flex
@@ -70,6 +70,8 @@
   min-height: 1811px
   padding: 192px 14px 127px 238px
   box-sizing: border-box
+  @include desktopBig
+    padding: 192px 300px 127px 438px
   @include desktopSmall
     padding: 115px 0 102px 63px
     min-height: 1560px

@@ -7,11 +7,15 @@
 .cart
   display: flex
   margin-bottom: 100px
+  @include desktopBig
+    justify-content: space-between
   @include desktopSmall
     flex-direction: column
 
 .cart__prd-list
   flex: none
+  @include desktopBig
+    flex: 1
 
 .prd-list
   width: 848px
@@ -48,6 +52,12 @@
   border: 1px solid #E68336
   @include desktopSmall
     padding: 25px 33px
+  @include tabletSmall
+    width: 370px
+    margin: 0 auto
+  @include mobile
+    width: 100%
+    margin: 0
 
 .prd-list__row
   height: 150px
@@ -150,6 +160,8 @@
 .cart__cart-checkout
   flex: 1
   margin-left: 30px
+  @include desktopBig
+    flex: 0
   @include desktopSmall
     margin-top: 45px
     margin-left: 0

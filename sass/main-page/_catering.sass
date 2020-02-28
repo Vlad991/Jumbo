@@ -21,13 +21,15 @@
 
 .advantage
   display: flex
+  justify-content: space-between
   @include tabletSmall
     flex-direction: column
+    justify-content: flex-start
 
 .advantage__heading
   display: block
   @include fontFSC($goth-b, 36px)
-  width: 360px
+  flex-basis: 360px
   margin-top: 5px
   line-height: 50px
   @include desktopSmall
@@ -39,15 +41,23 @@
   @include tabletSmall
     text-align: center
     width: 100%
+    flex-basis: auto
 
 .advantage__list
   display: flex
   flex-direction: column
   height: 140px
+  flex-basis: 600px
   flex-wrap: wrap
   align-content: space-between
+  @include desktopBig
+    flex-basis: 800px
+  @include tablet
+    width: 550px
   @include tabletSmall
     margin-top: 25px
+    flex-basis: auto
+    width: 100%
   @include mobile
     height: auto
     width: 100%
@@ -63,12 +73,11 @@
     font-size: 14px
     line-height: 20px
   @include tablet
-    width: 230px
-  @include tabletSmall
     width: 200px
+  @include tabletSmall
+    width: 90%
   @include mobile
-    width: 100%
 
 .catering__button
-  text-align: right
   margin-top: 33px
+  margin-left: auto
