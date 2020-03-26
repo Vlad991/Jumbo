@@ -2,7 +2,7 @@
 @import "sass/function"
 
 .container__login
-  position: absolute
+  position: fixed
   top: 0
   left: 0
   width: 100%
@@ -10,6 +10,7 @@
   background: rgba(255, 255, 255, 0.2)
   padding: 0.01%
   box-sizing: border-box
+  z-index: 5
   @include tabletSmall
 
 
@@ -103,6 +104,19 @@
       height: 20px
     input
       margin-top: 10px
+
+.login__password
+  width: 185px
+
+.login__password-text
+  border: none
+  padding: 0
+  height: 40px
+  font-size: 40px
+  letter-spacing: 20px
+  text-align: right
+  &:focus
+    border: none
 
 .login__button
   margin: 45px auto 0

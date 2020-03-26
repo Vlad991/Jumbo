@@ -52,3 +52,4 @@ function browserReload(done) {
 }
 
 gulp.task('default', gulp.parallel(watchFiles, sync));
+gulp.task('sass', gulp.parallel(watchFiles));

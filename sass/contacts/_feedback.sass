@@ -6,11 +6,15 @@
 
 .feedback
   width: 485px
-  height: 514px
+  min-height: 514px
   background: $bg-clr
   padding: 30px 20px
   box-sizing: border-box
   border: 1px solid #fff
+  @include tabletSmall
+    width: 80%
+  @include mobile
+    width: 90%
 
 .feedback__cross
   display: block
@@ -32,6 +36,10 @@
 
 .feedback__field
   margin: 12px auto 0
+  @include tabletSmall
+    width: 100%
 
 .feedback__contact
   margin: 20px auto
+  @include mobile
+    width: 100%

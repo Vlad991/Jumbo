@@ -38,7 +38,9 @@
 .foot-content__logo
   display: block
   height: 56px
-  svg
+  object
+    pointer-events: none
+  svg, img, object
     @include desktopSmall
       height: 44px
     @include tabletSmall

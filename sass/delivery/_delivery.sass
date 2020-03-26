@@ -8,9 +8,10 @@
 .delivery__del-info
 
 .del-info
-  background-image: url("../../img/delivery/info_bg.svg")
+  background-image: url("../img/delivery/info_bg.svg")
   background-repeat: no-repeat
   background-position: 100% -22px
+  padding-bottom: 20px
   @include desktopBig
     background-position: 80% -22px
   @include tabletSmall
@@ -67,7 +68,7 @@
 
 .yourself
   height: 300px
-  background: url("../../img/delivery/yourself_bg.jpg") no-repeat top center
+  background: url("../img/delivery/yourself_bg.jpg") no-repeat top center
   background-size: cover
   padding: 0.01%
   @include desktopSmall
@@ -130,6 +131,11 @@
 
 .z-map__img
   width: 100%
+  height: 614px
+  @include desktopSmall
+    height: 490px
+  @include tabletSmall
+    height: 312px
 
 .z-map__description
   margin-top: 50px

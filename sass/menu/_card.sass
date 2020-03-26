@@ -13,24 +13,33 @@
 
 .card__inner
   background: $bg-clr
-  padding: 35px 0 0
+  padding: 25px 20px 15px
   box-sizing: border-box
   height: 100%
   width: 100%
+  display: flex
+  flex-direction: column
+  align-items: stretch
+  @include tabletSmall
+    padding-bottom: 25px
 
 .card__fixed
-  max-width: 185px
-  margin: 0 auto
-  @include tabletSmall
-    max-width: 230px
 
 .card__heading
+  display: block
   @include fontFSC($goth-m, 16px)
-  line-height: 15px
+  line-height: 18px
   text-align: center
+  flex-basis: 54px
+  @include tabletSmall
+    flex-basis: 36px
 
 .card__img
   display: block
+  flex-basis: 180px
+  max-height: 180px
+  max-width: 188px
+  align-self: center
 
 .card__price-weight
 
@@ -70,7 +79,7 @@
 
 .card__min-weight
   @include fontFSC($goth-r, 12px)
-  line-height: 16px
+  line-height: 14px
   width: 123px
 
 .card__persons
@@ -83,4 +92,5 @@
   @include fontFSC($goth-r, 12px)
 
 .card__button
-  margin: 15px auto 0
+  margin-top: auto
+  width: 100%

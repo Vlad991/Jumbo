@@ -53,7 +53,11 @@
   @include fontFSC($goth-r, 14px, $clr)
   text-align: left
   line-height: 20px
-  cursor: pointer
+
+.container__location-link
+  @include fontFSC($goth-r, 14px, $clr)
+  text-align: left
+  line-height: 20px
 
 .container__back
   @include fontFSC($goth-r, 14px, $clr)
@@ -69,14 +73,47 @@
   .container__back-text
     display: inline-block
 
+.container__error
+  position: fixed
+  bottom: 0
+  left: 0
+  z-index: 20
+  width: 100%
+  height: 50px
+  background-color: rgba(249, 75, 82, 0.54)
+  line-height: 50px
+  @include fontFSC($goth-b, 18px)
+
+.container__success
+  position: fixed
+  bottom: 0
+  left: 0
+  z-index: 20
+  width: 100%
+  height: 50px
+  background-color: rgba(105, 249, 75, 0.54)
+  line-height: 50px
+  @include fontFSC($goth-b, 18px)
+
+.container__attention
+  position: fixed
+  bottom: 0
+  left: 0
+  z-index: 20
+  width: 100%
+  height: 50px
+  background-color: rgba(249, 238, 75, 0.54)
+  line-height: 50px
+  @include fontFSC($goth-b, 18px)
+
 .container__img
   width: 100%
 
 .button
   display: block
   border-radius: 20px
-  background: linear-gradient(to right, #E5E5E5 0%, rgba(229, 229, 229, 0) 100%)
-  border: none
+  background: transparent
+  border: 2px solid #E5E5E5
   height: 34px
   width: 215px
   box-sizing: border-box
@@ -85,6 +122,7 @@
   transition: all 200ms ease-in-out
   &:hover
     background: $orange
+    border-color: $orange
     .button__inner
       background: $orange
       @include fontFSC($goth-m, 16px)
@@ -92,12 +130,12 @@
 .button__inner
   display: block
   border-radius: 40px
-  background-color: $bg-clr
+  background-color: transparent
   border: none
   height: 100%
   width: 100%
   text-align: center
-  line-height: 30px
+  line-height: 29px
   @include fontFSC($goth-m, 16px, $orange)
   text-transform: uppercase
   cursor: pointer
@@ -113,7 +151,7 @@
   height: 35px
   width: 185px
   text-align: center
-  line-height: 35px
+  line-height: 38px
   @include fontFSC($goth-m, 14px)
   text-transform: uppercase
   box-sizing: border-box
@@ -147,7 +185,8 @@
   cursor: pointer
   transition: all 0.2s ease-in-out
   div
-    transition: all 0.2s ease-in-out
+    transition: 0.2s ease-in-out
+    transition-property: color, fill
   svg
     transition: all 0.2s ease-in-out
     path

@@ -1,7 +1,10 @@
 # Don't track content of these folders
-node_modules/
+node_modules
 package-lock.json
-img/pixel/
+img/pixel
+opencart-3
+opencart_backup
+opencart_backup_1
 
 
 # Compiled source #

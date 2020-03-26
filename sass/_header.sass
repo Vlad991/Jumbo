@@ -14,8 +14,10 @@
   background-color: transparent
 
 .header__logo
+  object
+    pointer-events: none
   @include tabletSmall
-    svg, img
+    svg, img, object
       width: 92px
       height: 42px
 
@@ -83,7 +85,7 @@
 .header__menu-mobile-soc
   @include tabletSmall
     svg
-      width: 25px
+      width: 30px
 
 .header__menu-item_active
   color: $orange
@@ -93,7 +95,6 @@
 .header__small-item
   display: block
   padding: 0 18px
-  transition: all 0.2s ease-in-out
   &:last-child
     padding-right: 0
   &:first-child
@@ -107,9 +108,8 @@
     line-height: 52px
     @include fontFSC($goth-m, 14px)
   svg.small-item__img
-    width: 30px
+    width: 25px
     path
-      transition: all 0.2s ease-in-out
   @include desktopSmall
     padding: 0 15px
     &:first-child
@@ -183,7 +183,7 @@
 .header-drop__col-list
   visibility: hidden
   position: absolute
-  z-index: 1
+  z-index: 3
   top: 40px
   left: -17px
   width: 167px

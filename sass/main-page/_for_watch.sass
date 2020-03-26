@@ -8,9 +8,15 @@
 
 .for-watch__img
   width: 100%
-  @include mobile
+  min-height: 680px
+  @include tablet
+    min-height: 500px
+  @include tabletSmall
     width: 100%
-    height: 450px
+    min-height: 350px
+  @include mobile
+    min-height: 200px
+    height: 200px
 
 .for-watch__heading-wrap
   position: absolute

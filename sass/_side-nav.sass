@@ -15,6 +15,7 @@
     border: 1px solid #fff
 
 .side-nav__item
+  display: block
   margin-top: 19px
   &:first-child
     margin-top: 0
@@ -39,10 +40,13 @@
     display: none
     transition: all 0.2s ease-in-out
     .side-nav__sub-item
+      display: block
       cursor: pointer
       transition: all 0.2s ease-in-out
       &:hover
         color: $orange
+    .side-nav__sub-item_active
+      color: $orange
   svg
     path
       transition: all 0.2s ease-in-out
@@ -78,6 +82,8 @@
       margin-top: 15px
       &:first-child
         margin-top: 0
+    .side-nav__sub-item_active
+      color: $orange
 
 
 
